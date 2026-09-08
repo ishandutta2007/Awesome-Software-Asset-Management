@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Software-Asset-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Software-Asset-Management?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Software-Asset-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Software-Asset-Management?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Software-Asset-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Software-Asset-Management?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -64,40 +64,40 @@
 
 *Note: Repositories below are sorted by **GitHub Star Count (Descending)**.* ⬇️
 
-1. **[NetBox](https://github.com/netbox-community/netbox)** [<img src="https://img.shields.io/github/stars/netbox-community/netbox?style=social&color=white" alt="GitHub stars"/>](https://github.com/netbox-community/netbox/stargazers) 🌐  
+1. **[NetBox](https://github.com/netbox-community/netbox)** [<img src="https://img.shields.io/github/stars/netbox-community/netbox?style=social&color=white" alt="GitHub_Stars"/>](https://github.com/netbox-community/netbox/stargazers) 🌐  
    Premier open-source infrastructure resource management (IPAM/DCIM) and hardware asset tracking platform. Essential for mapping physical & virtual software hosting environments.
 
-2. **[Snipe-IT](https://github.com/snipe/snipe-it)** [<img src="https://img.shields.io/github/stars/snipe/snipe-it?style=social&color=white" alt="GitHub stars"/>](https://github.com/snipe/snipe-it/stargazers) 🧰  
+2. **[Snipe-IT](https://github.com/snipe/snipe-it)** [<img src="https://img.shields.io/github/stars/snipe/snipe-it?style=social&color=white" alt="GitHub_Stars"/>](https://github.com/snipe/snipe-it/stargazers) 🧰  
    Leading free and open-source IT asset and license management system. Tracks hardware, software licenses, assignments, depreciation, check-ins/outs, and audit trails. Actively maintained and widely deployed globally.
 
-3. **[Anchore Syft](https://github.com/anchore/syft)** [<img src="https://img.shields.io/github/stars/anchore/syft?style=social&color=white" alt="GitHub stars"/>](https://github.com/anchore/syft/stargazers) 📦  
+3. **[Anchore Syft](https://github.com/anchore/syft)** [<img src="https://img.shields.io/github/stars/anchore/syft?style=social&color=white" alt="GitHub_Stars"/>](https://github.com/anchore/syft/stargazers) 📦  
    CLI tool and library for generating a Software Bill of Materials (SBOM) from container images and filesystems. Detects software packages and licenses for OSS compliance.
 
-4. **[GLPI](https://github.com/glpi-project/glpi)** [<img src="https://img.shields.io/github/stars/glpi-project/glpi?style=social&color=white" alt="GitHub stars"/>](https://github.com/glpi-project/glpi/stargazers) 🖥️  
+4. **[GLPI](https://github.com/glpi-project/glpi)** [<img src="https://img.shields.io/github/stars/glpi-project/glpi?style=social&color=white" alt="GitHub_Stars"/>](https://github.com/glpi-project/glpi/stargazers) 🖥️  
    Open-source IT Service Management (ITSM) and asset management software suite. Includes automated software inventory tracking, financial asset management, and license tracking plugins.
 
-5. **[OWASP Dependency-Track](https://github.com/DependencyTrack/dependency-track)** [<img src="https://img.shields.io/github/stars/DependencyTrack/dependency-track?style=social&color=white" alt="GitHub stars"/>](https://github.com/DependencyTrack/dependency-track/stargazers) 🔒  
+5. **[OWASP Dependency-Track](https://github.com/DependencyTrack/dependency-track)** [<img src="https://img.shields.io/github/stars/DependencyTrack/dependency-track?style=social&color=white" alt="GitHub_Stars"/>](https://github.com/DependencyTrack/dependency-track/stargazers) 🔒  
    Intelligent Software Supply Chain Component Analysis platform that allows organizations to monitor software component usage, open-source licenses, and security risks.
 
-6. **[ScanCode Toolkit](https://github.com/aboutcode-org/scancode-toolkit)** [<img src="https://img.shields.io/github/stars/aboutcode-org/scancode-toolkit?style=social&color=white" alt="GitHub stars"/>](https://github.com/aboutcode-org/scancode-toolkit/stargazers) 🔍  
+6. **[ScanCode Toolkit](https://github.com/aboutcode-org/scancode-toolkit)** [<img src="https://img.shields.io/github/stars/aboutcode-org/scancode-toolkit?style=social&color=white" alt="GitHub_Stars"/>](https://github.com/aboutcode-org/scancode-toolkit/stargazers) 🔍  
    Comprehensive scanner for open-source license, copyright, and dependency identification in codebase assets.
 
-7. **[Ralph](https://github.com/allegro/ralph)** [<img src="https://img.shields.io/github/stars/allegro/ralph?style=social&color=white" alt="GitHub stars"/>](https://github.com/allegro/ralph/stargazers) 🏢  
+7. **[Ralph](https://github.com/allegro/ralph)** [<img src="https://img.shields.io/github/stars/allegro/ralph?style=social&color=white" alt="GitHub_Stars"/>](https://github.com/allegro/ralph/stargazers) 🏢  
    Open-source Asset Management, DCIM, and CMDB platform for data centers and enterprise IT asset environments.
 
-8. **[OSS Review Toolkit (ORT)](https://github.com/oss-review-toolkit/ort)** [<img src="https://img.shields.io/github/stars/oss-review-toolkit/ort?style=social&color=white" alt="GitHub stars"/>](https://github.com/oss-review-toolkit/ort/stargazers) ⚙️  
+8. **[OSS Review Toolkit (ORT)](https://github.com/oss-review-toolkit/ort)** [<img src="https://img.shields.io/github/stars/oss-review-toolkit/ort?style=social&color=white" alt="GitHub_Stars"/>](https://github.com/oss-review-toolkit/ort/stargazers) ⚙️  
    Suite of tools to assist with open-source software license compliance checks by verifying source code dependencies and obligations.
 
-9. **[Nautobot](https://github.com/nautobot/nautobot)** [<img src="https://img.shields.io/github/stars/nautobot/nautobot?style=social&color=white" alt="GitHub stars"/>](https://github.com/nautobot/nautobot/stargazers) 🤖  
+9. **[Nautobot](https://github.com/nautobot/nautobot)** [<img src="https://img.shields.io/github/stars/nautobot/nautobot?style=social&color=white" alt="GitHub_Stars"/>](https://github.com/nautobot/nautobot/stargazers) 🤖  
    Network Source of Truth and Network Automation platform with asset and device inventory cataloging features.
 
-10. **[FOSSology](https://github.com/fossology/fossology)** [<img src="https://img.shields.io/github/stars/fossology/fossology?style=social&color=white" alt="GitHub stars"/>](https://github.com/fossology/fossology/stargazers) 📜  
+10. **[FOSSology](https://github.com/fossology/fossology)** [<img src="https://img.shields.io/github/stars/fossology/fossology?style=social&color=white" alt="GitHub_Stars"/>](https://github.com/fossology/fossology/stargazers) 📜  
     Open-source license compliance toolkit and scanning system for detecting open-source licenses, copyrights, and export-control obligations in software distributions.
 
-11. **[OCS Inventory](https://github.com/OCSInventory-NG/OCSInventory-ocsreports)** [<img src="https://img.shields.io/github/stars/OCSInventory-NG/OCSInventory-ocsreports?style=social&color=white" alt="GitHub stars"/>](https://github.com/OCSInventory-NG/OCSInventory-ocsreports/stargazers) 📡  
+11. **[OCS Inventory](https://github.com/OCSInventory-NG/OCSInventory-ocsreports)** [<img src="https://img.shields.io/github/stars/OCSInventory-NG/OCSInventory-ocsreports?style=social&color=white" alt="GitHub_Stars"/>](https://github.com/OCSInventory-NG/OCSInventory-ocsreports/stargazers) 📡  
     Automated hardware and software inventory server and agent framework used for endpoint software discovery and SAM feeding.
 
-12. **[Open-AudIT](https://github.com/Opmantek/open-audit)** [<img src="https://img.shields.io/github/stars/Opmantek/open-audit?style=social&color=white" alt="GitHub stars"/>](https://github.com/Opmantek/open-audit/stargazers) 🔎  
+12. **[Open-AudIT](https://github.com/Opmantek/open-audit)** [<img src="https://img.shields.io/github/stars/Opmantek/open-audit?style=social&color=white" alt="GitHub_Stars"/>](https://github.com/Opmantek/open-audit/stargazers) 🔎  
     Network discovery and IT asset auditing application that tracks installed software, hardware configurations, and license usage.
 
 ---
