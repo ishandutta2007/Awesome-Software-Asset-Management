@@ -1,103 +1,156 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient Animation -->
+    <!-- Dark Tech Gradients -->
     <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a">
-        <animate attributeName="stop-color" values="#0f172a;#1e1b4b;#0f172a" dur="10s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="50%" stop-color="#1e1b4b">
-        <animate attributeName="stop-color" values="#1e1b4b;#311042;#1e1b4b" dur="10s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#020617">
-        <animate attributeName="stop-color" values="#020617;#0f172a;#020617" dur="10s" repeatCount="indefinite" />
-      </stop>
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
     </linearGradient>
 
-    <!-- Text Gradient -->
     <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#a855f7" />
-      <stop offset="100%" stop-color="#f43f5e" />
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
 
-    <!-- Glowing Pill Gradient -->
-    <linearGradient id="pill-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.3" />
+    <linearGradient id="laser-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ffcc" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00ffcc" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00ffcc" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Drop Shadow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <linearGradient id="box-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- Glowing Filter Effects -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
+
+    <filter id="glow-laser" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="1"/>
+    </pattern>
   </defs>
 
   <style>
-    .title { font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 46px; fill: url(#text-grad); }
-    .subtitle { font-family: system-ui, -apple-system, sans-serif; font-weight: 500; font-size: 20px; fill: #94a3b8; letter-spacing: 1.5px; }
-    .badge-text { font-family: system-ui, -apple-system, sans-serif; font-weight: 600; font-size: 14px; fill: #38bdf8; letter-spacing: 1px; }
-
-    @keyframes pulse {
-      0% { r: 6px; opacity: 0.8; }
-      50% { r: 12px; opacity: 0.3; }
-      100% { r: 6px; opacity: 0.8; }
-    }
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
-      100% { transform: translateY(0px); }
-    }
-    @keyframes dash {
-      to { stroke-dashoffset: -40; }
+    @keyframes scanBeam {
+      0% { transform: translateX(-50px); }
+      50% { transform: translateX(950px); }
+      100% { transform: translateX(-50px); }
     }
 
-    .sync-line { stroke: #6366f1; stroke-width: 2; stroke-dasharray: 6, 6; animation: dash 4s linear indefinite; }
+    @keyframes pulseBBox1 {
+      0%, 100% { stroke: #38bdf8; opacity: 0.9; }
+      50% { stroke: #4ade80; opacity: 0.5; }
+    }
+
+    @keyframes pulseBBox2 {
+      0%, 100% { stroke: #f43f5e; opacity: 0.9; }
+      50% { stroke: #fbbf24; opacity: 0.6; }
+    }
+
+    @keyframes floatParticle {
+      0% { transform: translateY(0px); opacity: 0.3; }
+      50% { transform: translateY(-15px); opacity: 0.8; }
+      100% { transform: translateY(0px); opacity: 0.3; }
+    }
+
+    @keyframes textGlow {
+      0%, 100% { filter: drop-shadow(0px 0px 8px rgba(56, 189, 248, 0.4)); }
+      50% { filter: drop-shadow(0px 0px 16px rgba(192, 132, 252, 0.7)); }
+    }
+
+    .bg { fill: url(#bg-grad); }
+    .grid-overlay { fill: url(#grid); opacity: 0.6; }
+    .title-text { font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 42px; fill: url(#text-grad); animation: textGlow 4s ease-in-out infinite; }
+    .subtitle-text { font-family: system-ui, -apple-system, sans-serif; font-weight: 500; font-size: 18px; fill: #94a3b8; }
+    .tag-badge { font-family: system-ui, -apple-system, sans-serif; font-weight: 600; font-size: 12px; fill: #00ffcc; }
+    .laser-line { animation: scanBeam 6s ease-in-out infinite; }
+    .bbox-1 { animation: pulseBBox1 3s infinite; }
+    .bbox-2 { animation: pulseBBox2 2.5s infinite; }
+    .particle { animation: floatParticle 4s ease-in-out infinite; }
   </style>
 
   <!-- Background -->
-  <rect width="1200" height="400" rx="16" fill="url(#bg-grad)" />
+  <rect width="1000" height="360" class="bg" rx="16"/>
+  <rect width="1000" height="360" class="grid-overlay" rx="16"/>
 
-  <!-- Decorative Grid Overlay -->
-  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
-    <path d="M0 50 H1200 M0 100 H1200 M0 150 H1200 M0 200 H1200 M0 250 H1200 M0 300 H1200 M0 350 H1200" />
-    <path d="M100 0 V400 M200 0 V400 M300 0 V400 M400 0 V400 M500 0 V400 M600 0 V400 M700 0 V400 M800 0 V400 M900 0 V400 M1000 0 V400 M1100 0 V400" />
+  <!-- Shelf Graphic Representation (Right Side) -->
+  <g transform="translate(620, 50)">
+    <!-- Shelf Racks -->
+    <line x1="0" y1="80" x2="320" y2="80" stroke="#334155" stroke-width="4"/>
+    <line x1="0" y1="170" x2="320" y2="170" stroke="#334155" stroke-width="4"/>
+    <line x1="0" y1="260" x2="320" y2="260" stroke="#334155" stroke-width="4"/>
+
+    <!-- Products on Shelf 1 -->
+    <rect x="20" y="20" width="35" height="58" rx="4" fill="#1e293b" stroke="#475569"/>
+    <rect x="65" y="25" width="35" height="53" rx="4" fill="#1e293b" stroke="#475569"/>
+    <rect x="110" y="15" width="35" height="63" rx="4" fill="#1e293b" stroke="#475569"/>
+    <!-- Bounding Box 1 (Detected Product) -->
+    <rect x="15" y="10" width="135" height="72" fill="url(#box-grad)" class="bbox-1" stroke-width="2" stroke-dasharray="6,3" rx="6"/>
+    <text x="20" y="5" font-family="sans-serif" font-size="10" fill="#38bdf8" font-weight="bold">SKU-110K MATCH 99.2%</text>
+
+    <!-- Products on Shelf 2 -->
+    <rect x="20" y="110" width="40" height="58" rx="4" fill="#1e293b" stroke="#475569"/>
+    <rect x="70" y="110" width="40" height="58" rx="4" fill="#1e293b" stroke="#475569"/>
+    <!-- Out of Stock Box (Red Alert) -->
+    <rect x="120" y="105" width="55" height="64" fill="rgba(244,63,94,0.1)" class="bbox-2" stroke-width="2" rx="6"/>
+    <text x="122" y="100" font-family="sans-serif" font-size="10" fill="#f43f5e" font-weight="bold">OUT OF STOCK ALERT</text>
+
+    <!-- Products on Shelf 3 -->
+    <rect x="20" y="200" width="30" height="58" rx="4" fill="#1e293b" stroke="#475569"/>
+    <rect x="60" y="200" width="30" height="58" rx="4" fill="#1e293b" stroke="#475569"/>
+    <rect x="100" y="200" width="30" height="58" rx="4" fill="#1e293b" stroke="#475569"/>
+    <rect x="140" y="200" width="30" height="58" rx="4" fill="#1e293b" stroke="#475569"/>
   </g>
 
-  <!-- Animated Synchronization Lines -->
-  <path class="sync-line" d="M 250 200 Q 400 120 600 200 T 950 200" fill="none" />
-  <path class="sync-line" d="M 250 200 Q 450 280 600 200 T 950 200" fill="none" stroke="#ec4899" />
-
-  <!-- Animated Glowing Nodes -->
-  <circle cx="250" cy="200" r="8" fill="#38bdf8" filter="url(#glow)" />
-  <circle cx="600" cy="200" r="10" fill="#a855f7" filter="url(#glow)" />
-  <circle cx="950" cy="200" r="8" fill="#10b981" filter="url(#glow)" />
-
-  <!-- Content Group -->
-  <g transform="translate(600, 180)" text-anchor="middle">
-    <!-- Top Pill Badge -->
-    <rect x="-160" y="-105" width="320" height="34" rx="17" fill="url(#pill-grad)" stroke="#6366f1" stroke-width="1.5" />
-    <text x="0" y="-83" class="badge-text">VACATION RENTAL OPS ECOSYSTEM</text>
+  <!-- Left Side Header & Telemetry Content -->
+  <g transform="translate(60, 90)">
+    <!-- Badge Indicator -->
+    <rect x="0" y="0" width="220" height="26" rx="13" fill="rgba(0, 255, 204, 0.1)" stroke="#00ffcc" stroke-width="1"/>
+    <circle cx="12" cy="13" r="4" fill="#00ffcc"/>
+    <text x="24" y="17" class="tag-badge">AI RETAIL EXECUTION PLATFORM</text>
 
     <!-- Main Title -->
-    <text x="0" y="-20" class="title" filter="url(#glow)">Awesome Short-Term Rental Operations</text>
+    <text x="0" y="70" class="title-text">Shelf Intelligence</text>
+    <text x="0" y="110" class="subtitle-text">Retail Vision • Planograms • Out-of-Stock AI</text>
 
-    <!-- Subtitle -->
-    <text x="0" y="30" class="subtitle">PMS • Channel Management • Automated Messaging • Smart Access</text>
+    <!-- Real-time Metrics Pill Badges -->
+    <g transform="translate(0, 140)">
+      <rect x="0" y="0" width="150" height="34" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="12" y="21" font-family="sans-serif" font-size="12" fill="#38bdf8" font-weight="600">Compliance: 98.4%</text>
 
-    <!-- Tech Tags / Features -->
-    <g transform="translate(0, 75)" font-family="system-ui" font-size="13" font-weight="600">
-      <rect x="-240" y="0" width="130" height="28" rx="14" fill="#1e293b" stroke="#334155" />
-      <text x="-175" y="19" fill="#38bdf8" text-anchor="middle">🏠 Multi-Calendar</text>
+      <rect x="160" y="0" width="150" height="34" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="172" y="21" font-family="sans-serif" font-size="12" fill="#4ade80" font-weight="600">Real-Time Audits</text>
 
-      <rect x="-90" y="0" width="110" height="28" rx="14" fill="#1e293b" stroke="#334155" />
-      <text x="-35" y="19" fill="#a855f7" text-anchor="middle">🔑 Smart Lock</text>
-
-      <rect x="35" y="0" width="105" height="28" rx="14" fill="#1e293b" stroke="#334155" />
-      <text x="87.5" y="19" fill="#10b981" text-anchor="middle">🧹 Turno Ops</text>
-
-      <rect x="155" y="0" width="105" height="28" rx="14" fill="#1e293b" stroke="#334155" />
-      <text x="207.5" y="19" fill="#f43f5e" text-anchor="middle">⚡ Open-Source</text>
+      <rect x="320" y="0" width="150" height="34" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="332" y="21" font-family="sans-serif" font-size="12" fill="#c084fc" font-weight="600">YOLO + Embeddings</text>
     </g>
   </g>
+
+  <!-- Dynamic Laser Scan Beam -->
+  <g class="laser-line">
+    <line x1="0" y1="0" x2="0" y2="360" stroke="url(#laser-grad)" stroke-width="4" filter="url(#glow-laser)"/>
+    <line x1="0" y1="0" x2="0" y2="360" stroke="#ffffff" stroke-width="1" opacity="0.9"/>
+  </g>
+
+  <!-- Floating Ambient Particles -->
+  <circle cx="200" cy="80" r="2" fill="#38bdf8" class="particle"/>
+  <circle cx="450" cy="300" r="3" fill="#818cf8" class="particle"/>
+  <circle cx="850" cy="100" r="2" fill="#00ffcc" class="particle"/>
 </svg>
