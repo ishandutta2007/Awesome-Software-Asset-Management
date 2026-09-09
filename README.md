@@ -1,183 +1,426 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Awesome Semiconductor Process Control Banner" width="100%">
-</p>
-
-<p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Semiconductor-Process-Control"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Semiconductor-Process-Control?style=flat-square&color=blue" alt="Stars"/></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Semiconductor-Process-Control/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Semiconductor-Process-Control?style=flat-square&color=blue" alt="Forks"/></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Semiconductor-Process-Control/stargazers"><img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Semiconductor-Process-Control?style=flat-square" alt="Last Commit"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
-# 🏭 Awesome Semiconductor Process Control
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Simulation & Digital Twin Platform Banner" width="100%" />
+</p>
 
-> A comprehensive, curated collection of enterprise **SaaS/Hosted Platforms** and **Open-Source GitHub Projects** for **Semiconductor Statistical Process Control (SPC)**, **Yield Management Systems (YMS)**, **Metrology Analytics**, **Fault Detection & Classification (FDC)**, **Advanced Process Control (APC)**, and **Semiconductor Smart Manufacturing**.
+# ⚡ Awesome Simulation & Digital Twin Platform 🚀
 
----
+> **The definitive curated directory of commercial SaaS digital twin platforms, open-source simulation tools, IoT context brokers, physics engines, spatial 3D frameworks, and enterprise digital twin technology stacks.**
 
-## 📌 Ecosystem Overview & Market Dynamics
-
-Semiconductor process control monitors wafer fabrication processes through physical metrology, defect inspection, and real-time equipment telemetry to maximize die yield and process stability. Typical capabilities include statistical process control (SPC), Shewhart control charts, process capability indices ($C_p, C_{pk}, P_p, P_{pk}$), excursion management, fault detection and classification (FDC), virtual metrology, wafer genealogy, SECS/GEM equipment integration, and closed-loop process optimization.
-
-### 📊 Sector Market Size & Industry Concentration
-> 💡 **Estimated Market Size**: The global Semiconductor Process Control, Inspection, and Yield Analytics market is estimated at **~$11.8 Billion in 2026** and projected to reach **~$18.5 Billion by 2032** (growing at a CAGR of 7.8%).
-> 
-> 🎯 **Market Concentration**: The sector is **highly concentrated (oligopolistic / winner-take-all dynamics)** at the front-end fab inspection and metrology level, dominated by tier-1 capital equipment leaders (such as **KLA**, **Applied Materials**, **Onto Innovation**, **Siemens**, and **PDF Solutions**) due to extreme domain complexity, high capital barriers, proprietary hardware integration, and deep SECS/GEM tool protocols. Conversely, general industrial SPC software and downstream data analytics remain **moderately fragmented** across specialized quality engineering software providers.
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
+**Last Updated:** September 2026 | **Keywords:** `digital-twin`, `physics-simulation`, `industrial-iot`, `asset-administration-shell`, `co-simulation`, `fmi-fmu`, `openmodelica`, `cesiumjs`, `eclipse-ditto`, `smart-cities`, `predictive-maintenance`
 
 ---
 
-## 📑 Table of Contents
+## 📌 Introduction
 
-- [🏭 Awesome Semiconductor Process Control](#-awesome-semiconductor-process-control)
-  - [📌 Ecosystem Overview \& Market Dynamics](#-ecosystem-overview--market-dynamics)
-    - [📊 Sector Market Size \& Industry Concentration](#-sector-market-size--industry-concentration)
-  - [📑 Table of Contents](#-table-of-contents)
-  - [🏢 SaaS / Hosted Platforms (Sorted by Company Size)](#-saas--hosted-platforms-sorted-by-company-size)
-  - [⚡ Open-Source GitHub Projects (Sorted by Star Count)](#-open-source-github-projects-sorted-by-star-count)
-  - [🛠️ Architecture for Custom Semiconductor Process Control](#️-architecture-for-custom-semiconductor-process-control)
-  - [📈 Star History](#-star-history)
-  - [🤝 How to Contribute](#-how-to-contribute)
-  - [⚠️ Disclaimer](#️-disclaimer)
+Digital Twin and Simulation platforms combine **physics-based simulation, real-time IoT data, engineering models, operational data, AI/ML, 3D visualization and lifecycle information** to create a continuously updated digital representation of a physical asset, machine, process, facility, vehicle, infrastructure system or entire industrial environment.
 
----
+Leading commercial platforms include:
+* 🌐 [Amazon AWS IoT TwinMaker](https://aws.amazon.com/iot-twinmaker/)
+* ☁️ [Microsoft Azure Digital Twins](https://azure.microsoft.com/products/digital-twins)
+* 🎮 [NVIDIA Omniverse](https://www.nvidia.com/en-us/omniverse/)
+* ⚙️ [Siemens Simcenter](https://plm.sw.siemens.com/en-US/simcenter/)
+* 🏢 [IBM Maximo Application Suite](https://www.ibm.com/products/maximo)
+* ⚡ [Schneider Electric EcoStruxure](https://www.se.com/ww/en/work/solutions/ecostruxure/)
+* 📐 [Dassault Systèmes 3DEXPERIENCE](https://www.3ds.com/3dexperience)
+* 🏗️ [Hexagon Nexus](https://nexus.hexagon.com/)
+* 🔬 [Ansys Twin Builder](https://www.ansys.com/products/digital-twin/ansys-twin-builder)
+* 🏭 [PTC ThingWorx](https://www.ptc.com/en/products/thingworx)
 
-## 🏢 SaaS / Hosted Platforms (Sorted by Company Size)
-
-The following enterprise SaaS and hosted commercial suites provide semiconductor process control, yield management, metrology analytics, and manufacturing quality workflows.
-
-| Platform / Product | Description | Pricing (Starting Tier) | Free Tier / Free Trial Limit | Company Size (Revenue / Valuation) |
-| :--- | :--- | :--- | :--- | :--- |
-| **[Siemens Opcenter Quality](https://www.siemens.com/)** | Quality-management and statistical process-control platform supporting shop-floor inspections, process monitoring, deviation management, quality analysis, and corrective actions. | Starts at ~$1,200/user/year (or ~$100/user/month starting tier) | 30-day free trial (full preconfigured cloud environment, single-user limit) | **~$85.0B** Siemens AG Group Revenue (Digital Industries ~$22.0B) |
-| **[Siemens Opcenter Execution Semiconductor](https://www.siemens.com/)** | Semiconductor-focused MES platform connecting manufacturing execution, equipment integration, quality, traceability, process control, analytics, and yield workflows. | Starts at ~$10,000/month (or ~$120,000/year entry fab site deployment) | 30-day trial environment via Siemens Xcelerator Academy / Opcenter X sandbox | **~$85.0B** Siemens AG Group Revenue (Digital Industries ~$22.0B) |
-| **[Honeywell Manufacturing Intelligence](https://www.honeywell.com/)** | Industrial manufacturing software and analytics ecosystem supporting process monitoring, production data, quality management, automation, and manufacturing intelligence. | Starts at ~$15,000/year (entry Forge industrial cloud platform tier) | 30-day guided cloud evaluation (limited to 5 connected sensor streams / 1 plant area) | **~$38.5B** Honeywell Revenue (~$130B Market Cap) |
-| **[Applied Materials SmartFactory](https://www.appliedmaterials.com/)** | Digital manufacturing ecosystem connecting semiconductor equipment, factory data, analytics, automation, and process-control workflows to improve fab yield. | Starts at ~$60,000/year (entry fab deployment starter tier) | 30-day sandbox pilot evaluation (limited to single-bay simulator dataset) | **~$26.5B** Applied Materials Revenue (~$180B Market Cap) |
-| **[Emerson](https://www.emerson.com/)** | Industrial automation and process-control ecosystem providing manufacturing data infrastructure, advanced control, analytics, and operational intelligence. | Starts at ~$6,000/year (DeltaV Flex subscription tier starting at 50 Device Signal Tags) | 30-day evaluation trial environment (via Emerson certified partner sandbox, limited to 50 DSTs) | **~$17.5B** Emerson Electric Revenue (~$70B Market Cap) |
-| **[KLA](https://www.kla.com/)** | Leading semiconductor process-control company providing inspection, metrology, analytics, process-control, and yield-management technologies. | Starts at ~$50,000/year (enterprise baseline entry tier) | 30-day proof-of-concept evaluation pilot (limited to 1 module or 1 line qualification) | **~$10.5B** KLA Revenue (~$110B Market Cap) |
-| **[KLA SPC](https://www.kla.com/)** | Semiconductor statistical process-control capabilities supporting monitoring of process measurements, control limits, excursions, trends, and quality. | Starts at ~$25,000/year (starting analytics software tier) | 28-day (4-week) fixed-scope evaluation sprint (limited to 1 tool group / pilot dataset) | **~$10.5B** KLA Revenue (~$110B Market Cap) |
-| **[Rockwell Automation FactoryTalk](https://www.rockwellautomation.com/)** | Industrial software ecosystem providing manufacturing analytics, production monitoring, quality, and process data integration. | Starts at ~$3,000/year (or ~$250/month starter subscription; ~$5,000/year for Developer Toolkit) | 30-day free trial license (90-day free trial for FactoryTalk Remote Access & Optix Cloud Studio) | **~$9.1B** Rockwell Automation Revenue (~$32B Market Cap) |
-| **[AVEVA Manufacturing](https://www.aveva.com/)** | Industrial software platform providing MES, manufacturing intelligence, process analytics, visualization, and production-quality capabilities. | Starts at ~$5,000/year (Flex subscription credit entry package) | 30-day free trial (InTouch HMI & cloud analytics trial with built-in 2-hour runtime demo mode) | **~$7.5B** AVEVA / Schneider Electric Ecosystem ($2.5B software revenue) |
-| **[Q-DAS](https://www.q-das.com/)** | Manufacturing quality and statistical-analysis software ecosystem providing SPC, measurement-data management, process capability, and quality reporting. | Starts at ~$2,500/user license (plus ~18% annual maintenance fee) | 90-day (3-month) trial license (available upon sales request, full analytical capabilities) | **~$5.8B** Hexagon AB Revenue (Q-DAS ~$120M division) |
-| **[AspenTech](https://www.aspentech.com/)** | Industrial software provider offering process optimization, manufacturing analytics, asset performance, and advanced process-control technologies. | Starts at ~$20,000/year (token-based enterprise entry pool) | Free Online Interactive Trial (guided web-browser sandbox sessions, 14-day token test drive) | **~$1.1B** AspenTech Revenue (~$14B Market Cap) |
-| **[Onto Innovation](https://ontoinnovation.com/)** | Semiconductor process-control company providing inspection, metrology, process-control, and software solutions for wafer manufacturing. | Starts at ~$40,000/year (entry software suite package) | 30-day guided evaluation / software proof-of-concept demo environment | **~$1.0B** Onto Innovation Revenue (~$10B Market Cap) |
-| **[Onto Innovation Discover](https://ontoinnovation.com/)** | Process-control and data-analysis environment supporting semiconductor manufacturing measurements, inspection, metrology, and yield optimization. | Starts at ~$20,000/year (baseline yield analytics tier) | 30-day evaluation trial (limited to offline dataset analysis and pilot tool matching) | **~$1.0B** Onto Innovation Revenue (~$10B Market Cap) |
-| **[CamLine LineWorks](https://www.camline.com/)** | Manufacturing quality and process-control software suite with LineWorks SPACE providing enterprise SPC, control charts, and statistical analysis. | Starts at ~$15,000/year (or ~$1,250/month entry server license) | 30-day evaluation trial (up to 5 concurrent user seats, limited sample fab database) | **~$350M** Elisa IndustrIQ Revenue (camLine ~$45M revenue) |
-| **[InfinityQS ProFicient](https://www.infinityqs.com/)** | Enterprise manufacturing quality platform providing real-time SPC, data collection, process monitoring, quality analytics, and statistical quality management. | Starts at ~$75/user/month (or ~$900/user/year baseline cloud tier) | 14-day free trial (up to 3 admin user logins, 100 SPC chart streams limit) | **~$250M** Advantive Group Valuation (~$60M revenue) |
-| **[PDF Solutions Exensio](https://www.pdf.com/)** | Manufacturing analytics platform for semiconductor manufacturing integrating yield, test, metrology, equipment, and FDC data for root-cause analysis. | Starts at ~$25,000/year (or ~$2,000/month baseline cloud tier) | Free Forever plan (Offline Analytics Sandbox with limited features) / 30-day evaluation trial (full SaaS cloud workspace) | **~$170M** PDF Solutions Revenue (~$1.2B Market Cap) |
-| **[DataLyzer](https://www.datalyzer.com/)** | Manufacturing quality and SPC software providing statistical process control, measurement data collection, capability analysis, and quality reporting. | Starts at ~$1,495 one-time license fee (or ~$125/user/month) | 30-day free trial (full module features, up to 5 local workstation licenses) | **~$25M** DataLyzer International Revenue |
-| **[Qualis SPC](https://www.qualis-spc.com/)** | Statistical process-control platform supporting data acquisition, control charts, process capability, alarms, and manufacturing quality monitoring. | Starts at ~$1,295 one-time license fee (or ~$105/user/month) | 30-day free trial (up to 3 production station monitors, full SPC charting tools) | **~$15M** Qualis SPC Revenue |
+These platforms differ significantly. Some are primarily **engineering simulation environments**, some are **IoT/digital-twin platforms**, while others concentrate on **industrial data historians, BIM/geospatial twins or enterprise asset intelligence**.
 
 ---
 
-## ⚡ Open-Source GitHub Projects (Sorted by Star Count)
+## 📊 Examples of Digital Twin Applications 💡
 
-The following open-source projects provide statistical process control engines, time-series data infrastructure, manufacturing integration protocols, anomaly detection libraries, and analytics visualization tools.
-
-* **[n8n](https://github.com/n8n-io/n8n)** <a href="https://github.com/n8n-io/n8n/stargazers"><img src="https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white" alt="Stars"/></a> - Open-source workflow automation platform useful for fab alerts, quality notifications, escalation workflows, and manufacturing application integration.
-* **[TensorFlow](https://github.com/tensorflow/tensorflow)** <a href="https://github.com/tensorflow/tensorflow/stargazers"><img src="https://img.shields.io/github/stars/tensorflow/tensorflow?style=social&color=white" alt="Stars"/></a> - Open-source machine-learning framework useful for wafer defect classification, predictive analytics, and process optimization.
-* **[PyTorch](https://github.com/pytorch/pytorch)** <a href="https://github.com/pytorch/pytorch/stargazers"><img src="https://img.shields.io/github/stars/pytorch/pytorch?style=social&color=white" alt="Stars"/></a> - Open-source machine-learning framework useful for predictive process modeling, virtual metrology, defect classification, and semiconductor image analysis.
-* **[FastAPI](https://github.com/fastapi/fastapi)** <a href="https://github.com/fastapi/fastapi/stargazers"><img src="https://img.shields.io/github/stars/fastapi/fastapi?style=social&color=white" alt="Stars"/></a> - High-performance Python web framework ideal for building real-time microservices for SPC APIs and manufacturing data integration.
-* **[Grafana](https://github.com/grafana/grafana)** <a href="https://github.com/grafana/grafana/stargazers"><img src="https://img.shields.io/github/stars/grafana/grafana?style=social&color=white" alt="Stars"/></a> - Open-source visualization and monitoring platform suitable for real-time SPC dashboards, equipment telemetry, alarms, and fab-level process monitoring.
-* **[Apache Superset](https://github.com/apache/superset)** <a href="https://github.com/apache/superset/stargazers"><img src="https://img.shields.io/github/stars/apache/superset?style=social&color=white" alt="Stars"/></a> - Open-source business-intelligence platform suitable for yield, process capability, defect, excursion, and manufacturing-quality analytics.
-* **[scikit-learn](https://github.com/scikit-learn/scikit-learn)** <a href="https://github.com/scikit-learn/scikit-learn/stargazers"><img src="https://img.shields.io/github/stars/scikit-learn/scikit-learn?style=social&color=white" alt="Stars"/></a> - Open-source machine-learning library suitable for anomaly detection, classification, clustering, regression, and predictive process-control applications.
-* **[Prometheus](https://github.com/prometheus/prometheus)** <a href="https://github.com/prometheus/prometheus/stargazers"><img src="https://img.shields.io/github/stars/prometheus/prometheus?style=social&color=white" alt="Stars"/></a> - Open-source monitoring and time-series platform useful for equipment-health and infrastructure monitoring around process-control systems.
-* **[Odoo Community](https://github.com/odoo/odoo)** <a href="https://github.com/odoo/odoo/stargazers"><img src="https://img.shields.io/github/stars/odoo/odoo?style=social&color=white" alt="Stars"/></a> - Open-source ERP platform with manufacturing, quality, inventory, and production capabilities providing an operational foundation around a custom SPC system.
-* **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** <a href="https://github.com/ClickHouse/ClickHouse/stargazers"><img src="https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white" alt="Stars"/></a> - Open-source analytical database well suited to very large manufacturing datasets and high-speed process analytics.
-* **[pandas](https://github.com/pandas-dev/pandas)** <a href="https://github.com/pandas-dev/pandas/stargazers"><img src="https://img.shields.io/github/stars/pandas-dev/pandas?style=social&color=white" alt="Stars"/></a> - Open-source data-analysis library widely useful for processing wafer, lot, equipment, metrology, and SPC datasets.
-* **[Metabase](https://github.com/metabase/metabase)** <a href="https://github.com/metabase/metabase/stargazers"><img src="https://img.shields.io/github/stars/metabase/metabase?style=social&color=white" alt="Stars"/></a> - Open-source analytics platform suitable for SPC reporting, process dashboards, and quality-management analysis.
-* **[Apache Airflow](https://github.com/apache/airflow)** <a href="https://github.com/apache/airflow/stargazers"><img src="https://img.shields.io/github/stars/apache/airflow?style=social&color=white" alt="Stars"/></a> - Open-source workflow orchestration platform suitable for scheduled SPC calculations, quality reports, model retraining, and manufacturing-data pipelines.
-* **[Streamlit](https://github.com/streamlit/streamlit)** <a href="https://github.com/streamlit/streamlit/stargazers"><img src="https://img.shields.io/github/stars/streamlit/streamlit?style=social&color=white" alt="Stars"/></a> - Open-source framework for building custom interactive web apps for semiconductor yield analysis and SPC engineering tools.
-* **[Apache Spark](https://github.com/apache/spark)** <a href="https://github.com/apache/spark/stargazers"><img src="https://img.shields.io/github/stars/apache/spark?style=social&color=white" alt="Stars"/></a> - Open-source distributed analytics engine suitable for large-scale semiconductor manufacturing, yield, and process datasets.
-* **[Ray](https://github.com/ray-project/ray)** <a href="https://github.com/ray-project/ray/stargazers"><img src="https://img.shields.io/github/stars/ray-project/ray?style=social&color=white" alt="Stars"/></a> - Open-source framework for scaling AI and Python applications, useful for large-scale distributed yield modeling and parallel SPC workloads.
-* **[DuckDB](https://github.com/duckdb/duckdb)** <a href="https://github.com/duckdb/duckdb/stargazers"><img src="https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white" alt="Stars"/></a> - Open-source analytical database useful for local and engineering analysis of large SPC and metrology datasets.
-* **[Polars](https://github.com/pola-rs/polars)** <a href="https://github.com/pola-rs/polars/stargazers"><img src="https://img.shields.io/github/stars/pola-rs/polars?style=social&color=white" alt="Stars"/></a> - Blazingly fast DataFrames library written in Rust/Python, ideal for high-throughput sensor telemetry and SPC calculations.
-* **[ERPNext](https://github.com/frappe/erpnext)** <a href="https://github.com/frappe/erpnext/stargazers"><img src="https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white" alt="Stars"/></a> - Open-source ERP with manufacturing, quality, inventory, and production functionality suitable for integrating process-control analytics.
-* **[Apache Kafka](https://github.com/apache/kafka)** <a href="https://github.com/apache/kafka/stargazers"><img src="https://img.shields.io/github/stars/apache/kafka?style=social&color=white" alt="Stars"/></a> - Open-source event-streaming platform suitable for high-volume wafer, equipment, metrology, test, and process-control data pipelines.
-* **[NumPy](https://github.com/numpy/numpy)** <a href="https://github.com/numpy/numpy/stargazers"><img src="https://img.shields.io/github/stars/numpy/numpy?style=social&color=white" alt="Stars"/></a> - Fundamental open-source numerical-computing library for manufacturing and semiconductor data analysis.
-* **[Hasura GraphQL Engine](https://github.com/hasura/graphql-engine)** <a href="https://github.com/hasura/graphql-engine/stargazers"><img src="https://img.shields.io/github/stars/hasura/graphql-engine?style=social&color=white" alt="Stars"/></a> - Open-source GraphQL engine providing instant real-time APIs over manufacturing databases (PostgreSQL/TimescaleDB/ClickHouse).
-* **[InfluxDB](https://github.com/influxdata/influxdb)** <a href="https://github.com/influxdata/influxdb/stargazers"><img src="https://img.shields.io/github/stars/influxdata/influxdb?style=social&color=white" alt="Stars"/></a> - Open-source time-series database suitable for high-frequency semiconductor equipment, sensor, metrology, and process-control data.
-* **[XGBoost](https://github.com/dmlc/xgboost)** <a href="https://github.com/dmlc/xgboost/stargazers"><img src="https://img.shields.io/github/stars/dmlc/xgboost?style=social&color=white" alt="Stars"/></a> - Open-source gradient-boosting framework useful for yield prediction, process classification, and quality-risk modeling.
-* **[MLflow](https://github.com/mlflow/mlflow)** <a href="https://github.com/mlflow/mlflow/stargazers"><img src="https://img.shields.io/github/stars/mlflow/mlflow?style=social&color=white" alt="Stars"/></a> - Open-source machine-learning lifecycle platform useful for managing predictive process-control models and experiments.
-* **[Apache Flink](https://github.com/apache/flink)** <a href="https://github.com/apache/flink/stargazers"><img src="https://img.shields.io/github/stars/apache/flink?style=social&color=white" alt="Stars"/></a> - Open-source stream-processing framework suitable for real-time process monitoring and excursion detection.
-* **[Prefect](https://github.com/PrefectHQ/prefect)** <a href="https://github.com/PrefectHQ/prefect/stargazers"><img src="https://img.shields.io/github/stars/PrefectHQ/prefect?style=social&color=white" alt="Stars"/></a> - Open-source workflow platform suitable for statistical analysis pipelines and manufacturing analytics.
-* **[Node-RED](https://github.com/node-red/node-red)** <a href="https://github.com/node-red/node-red/stargazers"><img src="https://img.shields.io/github/stars/node-red/node-red?style=social&color=white" alt="Stars"/></a> - Open-source flow-based automation platform useful for equipment integration, sensor workflows, alarms, and factory-data pipelines.
-* **[TimescaleDB](https://github.com/timescale/timescaledb)** <a href="https://github.com/timescale/timescaledb/stargazers"><img src="https://img.shields.io/github/stars/timescale/timescaledb?style=social&color=white" alt="Stars"/></a> - Open-source PostgreSQL extension optimized for time-series data, suitable for process measurements, equipment telemetry, and SPC data.
-* **[Marimo](https://github.com/marimo-team/marimo)** <a href="https://github.com/marimo-team/marimo/stargazers"><img src="https://img.shields.io/github/stars/marimo-team/marimo?style=social&color=white" alt="Stars"/></a> - Next-generation reactive Python notebook environment ideal for interactive SPC data exploration and yield research.
-* **[PostgreSQL](https://github.com/postgres/postgres)** <a href="https://github.com/postgres/postgres/stargazers"><img src="https://img.shields.io/github/stars/postgres/postgres?style=social&color=white" alt="Stars"/></a> - Open-source relational database suitable for process measurements, quality records, specifications, control limits, and manufacturing genealogy.
-* **[Airbyte](https://github.com/airbytehq/airbyte)** <a href="https://github.com/airbytehq/airbyte/stargazers"><img src="https://img.shields.io/github/stars/airbytehq/airbyte?style=social&color=white" alt="Stars"/></a> - Open-source data integration platform useful for moving manufacturing data between databases, warehouses, and analytics systems.
-* **[Plotly](https://github.com/plotly/plotly.py)** <a href="https://github.com/plotly/plotly.py/stargazers"><img src="https://img.shields.io/github/stars/plotly/plotly.py?style=social&color=white" alt="Stars"/></a> - Open-source visualization library useful for interactive control charts, process distributions, wafer maps, and manufacturing analytics.
-* **[LightGBM](https://github.com/microsoft/LightGBM)** <a href="https://github.com/microsoft/LightGBM/stargazers"><img src="https://img.shields.io/github/stars/microsoft/LightGBM?style=social&color=white" alt="Stars"/></a> - Open-source gradient-boosting framework useful for large-scale manufacturing prediction and classification.
-* **[VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics)** <a href="https://github.com/VictoriaMetrics/VictoriaMetrics/stargazers"><img src="https://img.shields.io/github/stars/VictoriaMetrics/VictoriaMetrics?style=social&color=white" alt="Stars"/></a> - Open-source time-series database suitable for large-scale manufacturing telemetry and monitoring workloads.
-* **[Dagster](https://github.com/dagster-io/dagster)** <a href="https://github.com/dagster-io/dagster/stargazers"><img src="https://img.shields.io/github/stars/dagster-io/dagster?style=social&color=white" alt="Stars"/></a> - Open-source data-orchestration platform useful for reproducible process-control and yield-analysis pipelines.
-* **[SciPy](https://github.com/scipy/scipy)** <a href="https://github.com/scipy/scipy/stargazers"><img src="https://img.shields.io/github/stars/scipy/scipy?style=social&color=white" alt="Stars"/></a> - Core open-source scientific-computing library providing statistical distributions, hypothesis testing, optimization, and numerical methods.
-* **[Optuna](https://github.com/optuna/optuna)** <a href="https://github.com/optuna/optuna/stargazers"><img src="https://img.shields.io/github/stars/optuna/optuna?style=social&color=white" alt="Stars"/></a> - Open-source hyperparameter optimization framework useful for tuning machine learning models in virtual metrology and APC.
-* **[statsmodels](https://github.com/statsmodels/statsmodels)** <a href="https://github.com/statsmodels/statsmodels/stargazers"><img src="https://img.shields.io/github/stars/statsmodels/statsmodels?style=social&color=white" alt="Stars"/></a> - Open-source statistical modeling library supporting regression, time-series analysis, statistical testing, and process-analysis workflows.
-* **[Eclipse Mosquitto](https://github.com/eclipse-mosquitto/mosquitto)** <a href="https://github.com/eclipse-mosquitto/mosquitto/stargazers"><img src="https://img.shields.io/github/stars/eclipse-mosquitto/mosquitto?style=social&color=white" alt="Stars"/></a> - Open-source MQTT broker useful for collecting process and equipment data from distributed manufacturing systems.
-* **[PyOD](https://github.com/yzhao062/pyod)** <a href="https://github.com/yzhao062/pyod/stargazers"><img src="https://img.shields.io/github/stars/yzhao062/pyod?style=social&color=white" alt="Stars"/></a> - Open-source Python toolkit for anomaly detection, useful for identifying abnormal process behavior and equipment conditions.
-* **[sktime](https://github.com/sktime/sktime)** <a href="https://github.com/sktime/sktime/stargazers"><img src="https://img.shields.io/github/stars/sktime/sktime?style=social&color=white" alt="Stars"/></a> - Open-source time-series machine-learning framework useful for forecasting, classification, and temporal process analysis.
-* **[tsfresh](https://github.com/blue-yonder/tsfresh)** <a href="https://github.com/blue-yonder/tsfresh/stargazers"><img src="https://img.shields.io/github/stars/blue-yonder/tsfresh?style=social&color=white" alt="Stars"/></a> - Open-source library for automated time-series feature extraction, useful for extracting process signatures from sensor data.
-* **[Apache Iceberg](https://github.com/apache/iceberg)** <a href="https://github.com/apache/iceberg/stargazers"><img src="https://img.shields.io/github/stars/apache/iceberg?style=social&color=white" alt="Stars"/></a> - Open table format suitable for building historical manufacturing-data lakes containing large volumes of process data.
-* **[Delta Lake](https://github.com/delta-io/delta)** <a href="https://github.com/delta-io/delta/stargazers"><img src="https://img.shields.io/github/stars/delta-io/delta?style=social&color=white" alt="Stars"/></a> - Open-source storage layer useful for reliable manufacturing-data pipelines and historical analytics.
-* **[Kats](https://github.com/facebookresearch/Kats)** <a href="https://github.com/facebookresearch/Kats/stargazers"><img src="https://img.shields.io/github/stars/facebookresearch/Kats?style=social&color=white" alt="Stars"/></a> - Open-source time-series analysis toolkit with forecasting, anomaly detection, and change-point capabilities.
-* **[River](https://github.com/online-ml/river)** <a href="https://github.com/online-ml/river/stargazers"><img src="https://img.shields.io/github/stars/online-ml/river?style=social&color=white" alt="Stars"/></a> - Open-source machine-learning library for online and streaming data, useful for real-time process monitoring.
-* **[Merlion](https://github.com/salesforce/Merlion)** <a href="https://github.com/salesforce/Merlion/stargazers"><img src="https://img.shields.io/github/stars/salesforce/Merlion?style=social&color=white" alt="Stars"/></a> - Open-source time-series intelligence library supporting anomaly detection, forecasting, and change-point analysis.
-* **[open62541](https://github.com/open62541/open62541)** <a href="https://github.com/open62541/open62541/stargazers"><img src="https://img.shields.io/github/stars/open62541/open62541?style=social&color=white" alt="Stars"/></a> - Open-source OPC UA implementation suitable for industrial equipment connectivity and manufacturing-data acquisition.
-* **[Eclipse Milo](https://github.com/eclipse-milo/milo)** <a href="https://github.com/eclipse-milo/milo/stargazers"><img src="https://img.shields.io/github/stars/eclipse-milo/milo?style=social&color=white" alt="Stars"/></a> - Open-source OPC UA implementation useful for connecting semiconductor equipment and factory automation systems.
-* **[pyspc](https://github.com/carlosqsilva/pyspc)** <a href="https://github.com/carlosqsilva/pyspc/stargazers"><img src="https://img.shields.io/github/stars/carlosqsilva/pyspc?style=social&color=white" alt="Stars"/></a> - Open-source Python SPC library supporting X-bar/R, X-bar/S, Individuals/Moving Range, EWMA, CUSUM, and multivariate control charts.
-* **[SPC Kit](https://github.com/jchester/spc-kit)** <a href="https://github.com/jchester/spc-kit/stargazers"><img src="https://img.shields.io/github/stars/jchester/spc-kit?style=social&color=white" alt="Stars"/></a> - Open-source statistical process-control toolkit implemented using SQL/PostgreSQL, including control-chart calculations.
-* **[PyShewhart](https://github.com/huft-jonathan/pyshewhart)** <a href="https://github.com/huft-jonathan/pyshewhart/stargazers"><img src="https://img.shields.io/github/stars/huft-jonathan/pyshewhart?style=social&color=white" alt="Stars"/></a> - Open-source Python module for generating Shewhart statistical process-control charts.
-* **[SPC](https://github.com/whbrewer/spc)** <a href="https://github.com/whbrewer/spc/stargazers"><img src="https://img.shields.io/github/stars/whbrewer/spc?style=social&color=white" alt="Stars"/></a> - Open-source statistical process-control project providing a web-oriented foundation for SPC analysis.
-* **[Cassini](https://github.com/saturnis-io/cassini)** <a href="https://github.com/saturnis-io/cassini/stargazers"><img src="https://img.shields.io/github/stars/saturnis-io/cassini?style=social&color=white" alt="Stars"/></a> - Open-source manufacturing SPC platform providing real-time control charts, process capability analysis, and gage R&R.
-* **[Process Improvement](https://github.com/jimlehner/process-improvement)** <a href="https://github.com/jimlehner/process-improvement/stargazers"><img src="https://img.shields.io/github/stars/jimlehner/process-improvement?style=social&color=white" alt="Stars"/></a> - Open-source Python package for process-variation analysis, quality calculations, and process improvement.
-* **[mfgQC](https://github.com/cjbrant/mfgQC)** <a href="https://github.com/cjbrant/mfgQC/stargazers"><img src="https://img.shields.io/github/stars/cjbrant/mfgQC?style=social&color=white" alt="Stars"/></a> - Open-source Python manufacturing-quality toolkit covering process capability, control charts, run-rule analysis, and gage R&R.
+Digital Twin platforms can be used across numerous domains:
+* 🏭 **Manufacturing & Factory Twins:** Real-time production monitoring, robot cell simulation, shop-floor optimization.
+* ⚡ **Energy & Power Systems:** Grid load balance, turbine health monitoring, solar asset performance.
+* 🚗 **Automotive & Aerospace:** Vehicle dynamics, autonomous fleet simulation, aerodynamic modeling.
+* 🏢 **Smart Buildings & Infrastructure:** HVAC energy efficiency, structural health monitoring, BIM synchronization.
+* 🌆 **Smart Cities & Geospatial:** Traffic flow optimization, urban microclimate simulation, utility management.
+* 🤖 **Robotics & Autonomous Systems:** Virtual commissioning, reinforcement learning in synthetic environments.
+* 🔮 **Predictive Maintenance:** Remaining useful life (RUL) estimation, fault detection, hybrid physics-AI analytics.
 
 ---
 
-## 🛠️ Architecture for Custom Semiconductor Process Control
+## 📖 Table of Contents 📑
 
-A robust enterprise self-hosted semiconductor process control architecture combines open protocols, real-time streaming, time-series storage, statistical engines, and visualization:
+* ☁️ [SaaS / Hosted Platforms](#-saas--hosted-platforms)
+* ⭐ [Open-Source Repositories Ranked by GitHub Stars](#-open-source-repositories-ranked-by-github-stars)
+* 🏗️ [Open-Source Digital Twin Platforms](#-open-source-digital-twin-platforms)
+* ⚙️ [Open-Source Simulation & Co-Simulation](#-open-source-simulation--co-simulation)
+* 📡 [Open-Source IoT & Edge Platforms](#-open-source-iot--edge-platforms)
+* 🌐 [Open-Source 3D, BIM & Spatial Twin Technologies](#-open-source-3d-bim--spatial-twin-technologies)
+* 🗄️ [Open-Source Data & Time-Series Infrastructure](#-open-source-data--time-series-infrastructure)
+* 🧠 [Open-Source AI/ML for Digital Twins](#-open-source-aiml-for-digital-twins)
+* 🔄 [Commercial Platform → Open-Source Equivalents](#-commercial-platform--open-source-equivalents)
+* 🏛️ [Frameworks for Building Custom Digital Twin Systems](#-frameworks-for-building-custom-digital-twin-systems)
+* 📐 [Reference Architecture](#-reference-architecture)
+* 🔄 [Digital Twin Lifecycle](#-digital-twin-lifecycle)
+* 📈 [Star History](#-star-history)
+* 🤝 [How to Contribute](#-how-to-contribute)
+* ⚠️ [Disclaimer](#-disclaimer)
 
+---
+
+## ☁️ SaaS / Hosted Platforms
+
+> 💡 **Market Overview & Industry Structure:**
+> The global Digital Twin & Industrial Simulation market size was estimated at **~$13.2 Billion in 2024** and is projected to reach **~$110 Billion by 2032** (CAGR of ~30.5%). The sector is **moderately fragmented**, dominated by enterprise engineering software vendors (*Ansys/Synopsys, Siemens, Dassault Systèmes, PTC, Bentley*) alongside hyperscale cloud providers (*AWS, Microsoft Azure, NVIDIA*). It remains a non-winner-take-all market due to specialized physics domains and fragmented industrial verticals.
+
+The table below summarizes commercial and hosted Digital Twin platforms, sorted by **Company Size (Revenue / Market Capitalization)** in descending order:
+
+| Platform | Primary Focus | Typical Use | Pricing | Free Tier / Trial Limits | Company Size (Revenue / Valuation) 📊 |
+| --- | --- | --- | --- | --- | --- |
+| [AWS IoT TwinMaker](https://aws.amazon.com/iot-twinmaker/) | IoT + 3D + operational data | Industrial/operational twins | Starts at $0.02 per 1,000 Data Access API calls after free tier | Free tier includes 50 million Data Access API calls/month for first 12 months | **~$575 Billion** Rev / ~$1.9T Market Cap (Amazon) |
+| [Azure Digital Twins](https://azure.microsoft.com/products/digital-twins) | Cloud twin graph + IoT | Buildings, facilities, industrial assets | Starts at $0.003 per 1,000 Digital Twin operations + $0.001 per 1,000 Query Units | 30-day free trial with $200 Azure credits via Azure Free Account | **~$245 Billion** Rev / ~$3.1T Market Cap (Microsoft) |
+| [NVIDIA Omniverse](https://www.nvidia.com/en-us/omniverse/) | 3D simulation + industrial metaverse | Robotics, factories, synthetic environments | Free ($0/month) for individual developers; Enterprise support starts at $4,500/year per GPU | Free forever plan for individual creators/developers; 30-day trial for Enterprise | **~$120 Billion** Rev / ~$3.0T Market Cap (NVIDIA) |
+| [Siemens Simcenter](https://plm.sw.siemens.com/en-US/simcenter/) | CAE + system simulation + test | Engineering & industrial simulation | Starts at ~$300/month (~$3,500/year) for Simcenter Cloud HPC starter tier | 30-day free trial for Simcenter Cloud HPC (includes 500 free compute credits) | **~$84 Billion** Rev / ~$140B Market Cap (Siemens) |
+| [IBM Maximo Application Suite](https://www.ibm.com/products/maximo) | Asset management + analytics | Asset performance | Essentials SaaS tier starts at ~$3,150/month (~$125/user/month AppPoints) | 14-day free trial of Maximo SaaS with sample asset data | **~$62 Billion** Rev / ~$180B Market Cap (IBM) |
+| [Schneider Electric EcoStruxure](https://www.se.com/ww/en/work/solutions/ecostruxure/) | Energy + industrial IoT | Industrial/building twins | Starts at ~$50/monitored device/year (~$250/month base IT Expert subscription) | 30-day free trial for EcoStruxure IT Expert (monitors up to 50 SNMP devices) | **~$38 Billion** Rev / ~$130B Market Cap (Schneider Electric) |
+| [Dassault Systèmes 3DEXPERIENCE](https://www.3ds.com/3dexperience) | PLM + simulation + 3D experience | Product & lifecycle twins | Starts at ~$250/user/month (~$3,000/user/year) for Cloud Standard roles | 14-day free trial with full platform feature access | **~$6.5 Billion** Rev / ~$45B Market Cap (Dassault Systèmes) |
+| [Dassault SIMULIA](https://www.3ds.com/products/simulia) | Multiphysics simulation | Engineering | Starts at ~$350/month (~$4,000/year) per user simulation role / token package | 30-day free evaluation via 3DEXPERIENCE Cloud; Abaqus Learning Edition free forever (max 1,000 nodes) | **~$6.5 Billion** Rev / ~$45B Market Cap (Dassault Systèmes) |
+| [Hexagon Nexus](https://nexus.hexagon.com/) | Manufacturing engineering ecosystem | Connected manufacturing | Starts at ~$150/month (~$1,800/year) per user application role / compute credits | Free registration with 30-day free trial for individual cloud apps (e.g. Adams Car on Demand) | **~$5.7 Billion** Rev / ~$30B Market Cap (Hexagon) |
+| [Ansys Twin Builder](https://www.ansys.com/products/digital-twin/ansys-twin-builder) | Physics + reduced-order models + hybrid analytics | Engineering digital twins | Starts at ~$1,500/month (~$18,000/year) per user node license | 30-day free trial (upon request); Free Student Edition (limited to 512k cells for academic use) | **~$2.3 Billion** Rev / ~$35B Valuation (Acquired by Synopsys) |
+| [PTC ThingWorx](https://www.ptc.com/en/products/thingworx) | Industrial IoT + applications | Manufacturing & IIoT | Starts at ~$1,000/user/month (~$12,000/year) or ~$50,000/year base Foundation license | 30-day hosted developer evaluation / 90-day academic evaluation license | **~$2.2 Billion** Rev / ~$21B Market Cap (PTC) |
+| [PTC Vuforia](https://www.ptc.com/en/products/vuforia) | AR + industrial visualization | Assisted operations | Basic Plan is $0/month; Premium Plan starts at ~$42/month (~$500/year) | Free forever Basic Plan (supports standard targets & 1,000 cloud recognitions/month) | **~$2.2 Billion** Rev / ~$21B Market Cap (PTC) |
+| [AVEVA PI System](https://www.aveva.com/en/products/aveva-pi-system/) | Industrial historian + operational data | Process industries | Starts at ~$1,000/month (~$12,000/year) via CONNECT / AVEVA Flex subscription | 45-day free trial via CONNECT Data Services (includes up to 1,000 active streams) | **~$1.5 Billion** Rev / ~$12B Valuation (AVEVA Group) |
+| [MathWorks Simulink](https://www.mathworks.com/products/simulink.html) | Dynamic system simulation | Controls & model-based design | Starts at $55/month ($540/year) standard individual license subscription | 30-day free trial with MATLAB/Simulink Online access; MATLAB Online Basic offers 20 hrs/mo free | **~$1.3 Billion** Rev / ~$15B Valuation (MathWorks Private) |
+| [Bentley iTwin](https://www.bentley.com/software/itwin/) | Infrastructure digital twins | Civil infrastructure, BIM | Standard Subscription starts at $199/month (includes 200 credits/mo, 50 GB storage) | Free forever Community Subscription (100 credits/mo, 10 GB cloud data, 100 GB reality storage) | **~$1.2 Billion** Rev / ~$15B Market Cap (Bentley Systems) |
+| [Altair Twin Activate](https://altair.com/twin-activate) | System simulation + reduced-order models | Engineering twins | Starts at ~$150/month (~$1,800/year) via Altair Units starter package | 30-day free trial via Altair One Marketplace; Free Student Edition (valid 1 yr, max 50 components) | **~$620 Million** Rev / ~$10B Valuation (Acquired by Siemens) |
+| [C3 AI Digital Twins](https://c3.ai/products/digital-twins/) | AI + enterprise digital twins | Asset intelligence | Starts at $0.55/vCPU-hour (~$2,500/month base platform fee) or ~$250,000 pilot | 14-day free trial of C3 AI Studio with $500 cloud compute credits | **~$310 Million** Rev / ~$3.5B Market Cap (C3.ai) |
+| [COMSOL Multiphysics](https://www.comsol.com/) | Multiphysics simulation | Physics-based twins | Starts at ~$1,600/year annual single-user term license (~$3,995 perpetual base) | 14-day temporary evaluation license upon sales representative approval | **~$150 Million** Rev / ~$1.5B Valuation (COMSOL Private) |
+
+---
+
+## ⭐ Open-Source Repositories Ranked by GitHub Stars
+
+Below is the master list of key open-source building blocks for Digital Twins and Simulation, sorted strictly by **GitHub Star Count (Descending)**:
+
+| Rank | Project Name | Category | GitHub Stars ⭐ | Stargazers Link 🔗 |
+| --- | --- | --- | --- | --- |
+| 1 | [TensorFlow](https://github.com/tensorflow/tensorflow) | AI / Machine Learning | [![Stars](https://img.shields.io/github/stars/tensorflow/tensorflow?style=social&color=white)](https://github.com/tensorflow/tensorflow/stargazers) | [Stargazers](https://github.com/tensorflow/tensorflow/stargazers) |
+| 2 | [PyTorch](https://github.com/pytorch/pytorch) | AI / Machine Learning | [![Stars](https://img.shields.io/github/stars/pytorch/pytorch?style=social&color=white)](https://github.com/pytorch/pytorch/stargazers) | [Stargazers](https://github.com/pytorch/pytorch/stargazers) |
+| 3 | [Grafana](https://github.com/grafana/grafana) | Visualization & Dashboards | [![Stars](https://img.shields.io/github/stars/grafana/grafana?style=social&color=white)](https://github.com/grafana/grafana/stargazers) | [Stargazers](https://github.com/grafana/grafana/stargazers) |
+| 4 | [Apache Superset](https://github.com/apache/superset) | Visualization & Analytics | [![Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) | [Stargazers](https://github.com/apache/superset/stargazers) |
+| 5 | [scikit-learn](https://github.com/scikit-learn/scikit-learn) | AI / Machine Learning | [![Stars](https://img.shields.io/github/stars/scikit-learn/scikit-learn?style=social&color=white)](https://github.com/scikit-learn/scikit-learn/stargazers) | [Stargazers](https://github.com/scikit-learn/scikit-learn/stargazers) |
+| 6 | [MinIO](https://github.com/minio/minio) | Object Storage | [![Stars](https://img.shields.io/github/stars/minio/minio?style=social&color=white)](https://github.com/minio/minio/stargazers) | [Stargazers](https://github.com/minio/minio/stargazers) |
+| 7 | [ClickHouse](https://github.com/ClickHouse/ClickHouse) | Columnar Data Infrastructure | [![Stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers) | [Stargazers](https://github.com/ClickHouse/ClickHouse/stargazers) |
+| 8 | [Metabase](https://github.com/metabase/metabase) | BI & Visualization | [![Stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers) | [Stargazers](https://github.com/metabase/metabase/stargazers) |
+| 9 | [Apache Spark](https://github.com/apache/spark) | Data Analytics Engine | [![Stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers) | [Stargazers](https://github.com/apache/spark/stargazers) |
+| 10 | [DuckDB](https://github.com/duckdb/duckdb) | Analytical Database | [![Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers) | [Stargazers](https://github.com/duckdb/duckdb/stargazers) |
+| 11 | [Apache Kafka](https://github.com/apache/kafka) | Event Streaming | [![Stars](https://img.shields.io/github/stars/apache/kafka?style=social&color=white)](https://github.com/apache/kafka/stargazers) | [Stargazers](https://github.com/apache/kafka/stargazers) |
+| 12 | [InfluxDB](https://github.com/influxdata/influxdb) | Time-Series Database | [![Stars](https://img.shields.io/github/stars/influxdata/influxdb?style=social&color=white)](https://github.com/influxdata/influxdb/stargazers) | [Stargazers](https://github.com/influxdata/influxdb/stargazers) |
+| 13 | [XGBoost](https://github.com/dmlc/xgboost) | Machine Learning | [![Stars](https://img.shields.io/github/stars/dmlc/xgboost?style=social&color=white)](https://github.com/dmlc/xgboost/stargazers) | [Stargazers](https://github.com/dmlc/xgboost/stargazers) |
+| 14 | [MLflow](https://github.com/mlflow/mlflow) | ML Lifecycle | [![Stars](https://img.shields.io/github/stars/mlflow/mlflow?style=social&color=white)](https://github.com/mlflow/mlflow/stargazers) | [Stargazers](https://github.com/mlflow/mlflow/stargazers) |
+| 15 | [Apache Flink](https://github.com/apache/flink) | Stream Processing | [![Stars](https://img.shields.io/github/stars/apache/flink?style=social&color=white)](https://github.com/apache/flink/stargazers) | [Stargazers](https://github.com/apache/flink/stargazers) |
+| 16 | [Node-RED](https://github.com/node-red/node-red) | Flow-Based Integration | [![Stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers) | [Stargazers](https://github.com/node-red/node-red/stargazers) |
+| 17 | [TimescaleDB](https://github.com/timescale/timescaledb) | Time-Series Database | [![Stars](https://img.shields.io/github/stars/timescale/timescaledb?style=social&color=white)](https://github.com/timescale/timescaledb/stargazers) | [Stargazers](https://github.com/timescale/timescaledb/stargazers) |
+| 18 | [ThingsBoard](https://github.com/thingsboard/thingsboard) | IoT & Twin Operational Layer | [![Stars](https://img.shields.io/github/stars/thingsboard/thingsboard?style=social&color=white)](https://github.com/thingsboard/thingsboard/stargazers) | [Stargazers](https://github.com/thingsboard/thingsboard/stargazers) |
+| 19 | [PostgreSQL](https://github.com/postgres/postgres) | Relational Database | [![Stars](https://img.shields.io/github/stars/postgres/postgres?style=social&color=white)](https://github.com/postgres/postgres/stargazers) | [Stargazers](https://github.com/postgres/postgres/stargazers) |
+| 20 | [NATS Server](https://github.com/nats-io/nats-server) | Cloud Messaging | [![Stars](https://img.shields.io/github/stars/nats-io/nats-server?style=social&color=white)](https://github.com/nats-io/nats-server/stargazers) | [Stargazers](https://github.com/nats-io/nats-server/stargazers) |
+| 21 | [Blender](https://github.com/blender/blender) | 3D Modeling & Visualization | [![Stars](https://img.shields.io/github/stars/blender/blender?style=social&color=white)](https://github.com/blender/blender/stargazers) | [Stargazers](https://github.com/blender/blender/stargazers) |
+| 22 | [LightGBM](https://github.com/microsoft/LightGBM) | Machine Learning | [![Stars](https://img.shields.io/github/stars/microsoft/LightGBM?style=social&color=white)](https://github.com/microsoft/LightGBM/stargazers) | [Stargazers](https://github.com/microsoft/LightGBM/stargazers) |
+| 23 | [CesiumJS](https://github.com/CesiumGS/cesium) | 3D Geospatial Engine | [![Stars](https://img.shields.io/github/stars/CesiumGS/cesium?style=social&color=white)](https://github.com/CesiumGS/cesium/stargazers) | [Stargazers](https://github.com/CesiumGS/cesium/stargazers) |
+| 24 | [PyBullet](https://github.com/bulletphysics/bullet3) | Physics & Robotics | [![Stars](https://img.shields.io/github/stars/bulletphysics/bullet3?style=social&color=white)](https://github.com/bulletphysics/bullet3/stargazers) | [Stargazers](https://github.com/bulletphysics/bullet3/stargazers) |
+| 25 | [CARLA Simulator](https://github.com/carla-simulator/carla) | Autonomous Driving Simulator | [![Stars](https://img.shields.io/github/stars/carla-simulator/carla?style=social&color=white)](https://github.com/carla-simulator/carla/stargazers) | [Stargazers](https://github.com/carla-simulator/carla/stargazers) |
+| 26 | [OpenLayers](https://github.com/openlayers/openlayers) | 2D/3D Mapping | [![Stars](https://img.shields.io/github/stars/openlayers/openlayers?style=social&color=white)](https://github.com/openlayers/openlayers/stargazers) | [Stargazers](https://github.com/openlayers/openlayers/stargazers) |
+| 27 | [Eclipse Mosquitto](https://github.com/eclipse-mosquitto/mosquitto) | MQTT Broker | [![Stars](https://img.shields.io/github/stars/eclipse-mosquitto/mosquitto?style=social&color=white)](https://github.com/eclipse-mosquitto/mosquitto/stargazers) | [Stargazers](https://github.com/eclipse-mosquitto/mosquitto/stargazers) |
+| 28 | [PyOD](https://github.com/yzhao062/pyod) | Anomaly Detection | [![Stars](https://img.shields.io/github/stars/yzhao062/pyod?style=social&color=white)](https://github.com/yzhao062/pyod/stargazers) | [Stargazers](https://github.com/yzhao062/pyod/stargazers) |
+| 29 | [O3DE](https://github.com/o3de/o3de) | 3D Industrial Simulation Engine | [![Stars](https://img.shields.io/github/stars/o3de/o3de?style=social&color=white)](https://github.com/o3de/o3de/stargazers) | [Stargazers](https://github.com/o3de/o3de/stargazers) |
+| 30 | [Webots](https://github.com/cyberbotics/webots) | Robot Simulator | [![Stars](https://img.shields.io/github/stars/cyberbotics/webots?style=social&color=white)](https://github.com/cyberbotics/webots/stargazers) | [Stargazers](https://github.com/cyberbotics/webots/stargazers) |
+| 31 | [Eclipse SUMO](https://github.com/eclipse-sumo/sumo) | Urban Traffic Simulator | [![Stars](https://img.shields.io/github/stars/eclipse-sumo/sumo?style=social&color=white)](https://github.com/eclipse-sumo/sumo/stargazers) | [Stargazers](https://github.com/eclipse-sumo/sumo/stargazers) |
+| 32 | [Project Chrono](https://github.com/projectchrono/chrono) | Physics Multibody Dynamics | [![Stars](https://img.shields.io/github/stars/projectchrono/chrono?style=social&color=white)](https://github.com/projectchrono/chrono/stargazers) | [Stargazers](https://github.com/projectchrono/chrono/stargazers) |
+| 33 | [IfcOpenShell](https://github.com/IfcOpenShell/IfcOpenShell) | BIM / IFC Processing | [![Stars](https://img.shields.io/github/stars/IfcOpenShell/IfcOpenShell?style=social&color=white)](https://github.com/IfcOpenShell/IfcOpenShell/stargazers) | [Stargazers](https://github.com/IfcOpenShell/IfcOpenShell/stargazers) |
+| 34 | [Magistrala (Mainflux)](https://github.com/absmach/magistrala) | IoT Platform | [![Stars](https://img.shields.io/github/stars/absmach/magistrala?style=social&color=white)](https://github.com/absmach/magistrala/stargazers) | [Stargazers](https://github.com/absmach/magistrala/stargazers) |
+| 35 | [OpenFOAM](https://github.com/OpenFOAM/OpenFOAM-dev) | CFD Fluid Simulation | [![Stars](https://img.shields.io/github/stars/OpenFOAM/OpenFOAM-dev?style=social&color=white)](https://github.com/OpenFOAM/OpenFOAM-dev/stargazers) | [Stargazers](https://github.com/OpenFOAM/OpenFOAM-dev/stargazers) |
+| 36 | [EnergyPlus](https://github.com/NREL/EnergyPlus) | Building Energy Simulator | [![Stars](https://img.shields.io/github/stars/NREL/EnergyPlus?style=social&color=white)](https://github.com/NREL/EnergyPlus/stargazers) | [Stargazers](https://github.com/NREL/EnergyPlus/stargazers) |
+| 37 | [EdgeX Foundry](https://github.com/edgexfoundry/edgex-go) | IIoT Edge Platform | [![Stars](https://img.shields.io/github/stars/edgexfoundry/edgex-go?style=social&color=white)](https://github.com/edgexfoundry/edgex-go/stargazers) | [Stargazers](https://github.com/edgexfoundry/edgex-go/stargazers) |
+| 38 | [Gazebo](https://github.com/gazebosim/gz-sim) | Robotics Simulator | [![Stars](https://img.shields.io/github/stars/gazebosim/gz-sim?style=social&color=white)](https://github.com/gazebosim/gz-sim/stargazers) | [Stargazers](https://github.com/gazebosim/gz-sim/stargazers) |
+| 39 | [OpenModelica](https://github.com/OpenModelica/OpenModelica) | System Simulation Engine | [![Stars](https://img.shields.io/github/stars/OpenModelica/OpenModelica?style=social&color=white)](https://github.com/OpenModelica/OpenModelica/stargazers) | [Stargazers](https://github.com/OpenModelica/OpenModelica/stargazers) |
+| 40 | [Eclipse Ditto](https://github.com/eclipse-ditto/ditto) | Digital Twin Core | [![Stars](https://img.shields.io/github/stars/eclipse-ditto/ditto?style=social&color=white)](https://github.com/eclipse-ditto/ditto/stargazers) | [Stargazers](https://github.com/eclipse-ditto/ditto/stargazers) |
+| 41 | [FMPy](https://github.com/CATIA-Systems/FMPy) | FMI/FMU Simulation | [![Stars](https://img.shields.io/github/stars/CATIA-Systems/FMPy?style=social&color=white)](https://github.com/CATIA-Systems/FMPy/stargazers) | [Stargazers](https://github.com/CATIA-Systems/FMPy/stargazers) |
+| 42 | [Eclipse Hono](https://github.com/eclipse-hono/hono) | IoT Connectivity | [![Stars](https://img.shields.io/github/stars/eclipse-hono/hono?style=social&color=white)](https://github.com/eclipse-hono/hono/stargazers) | [Stargazers](https://github.com/eclipse-hono/hono/stargazers) |
+| 43 | [OpenTwins](https://github.com/ertis-research/opentwins) | Compositional Digital Twin | [![Stars](https://img.shields.io/github/stars/ertis-research/opentwins?style=social&color=white)](https://github.com/ertis-research/opentwins/stargazers) | [Stargazers](https://github.com/ertis-research/opentwins/stargazers) |
+| 44 | [HELICS](https://github.com/GMLC-TDC/HELICS) | Co-Simulation Framework | [![Stars](https://img.shields.io/github/stars/GMLC-TDC/HELICS?style=social&color=white)](https://github.com/GMLC-TDC/HELICS/stargazers) | [Stargazers](https://github.com/GMLC-TDC/HELICS/stargazers) |
+| 45 | [FIWARE Orion-LD](https://github.com/FIWARE/context.Orion-LD) | NGSI-LD Context Broker | [![Stars](https://img.shields.io/github/stars/FIWARE/context.Orion-LD?style=social&color=white)](https://github.com/FIWARE/context.Orion-LD/stargazers) | [Stargazers](https://github.com/FIWARE/context.Orion-LD/stargazers) |
+| 46 | [SimPy](https://github.com/simpx/simpy) | Discrete-Event Simulation | [![Stars](https://img.shields.io/github/stars/simpx/simpy?style=social&color=white)](https://github.com/simpx/simpy/stargazers) | [Stargazers](https://github.com/simpx/simpy/stargazers) |
+| 47 | [Eclipse BaSyx](https://github.com/eclipse-basyx/basyx-java-sdk) | Asset Administration Shell | [![Stars](https://img.shields.io/github/stars/eclipse-basyx/basyx-java-sdk?style=social&color=white)](https://github.com/eclipse-basyx/basyx-java-sdk/stargazers) | [Stargazers](https://github.com/eclipse-basyx/basyx-java-sdk/stargazers) |
+| 48 | [Mosaik](https://github.com/OFFIS-mosaik/mosaik) | Smart Grid Co-Simulation | [![Stars](https://img.shields.io/github/stars/OFFIS-mosaik/mosaik?style=social&color=white)](https://github.com/OFFIS-mosaik/mosaik/stargazers) | [Stargazers](https://github.com/OFFIS-mosaik/mosaik/stargazers) |
+
+---
+
+## 🏗️ Open-Source Digital Twin Platforms
+
+The projects below provide core state abstraction, context brokers, and Industry 4.0 Asset Administration Shell (AAS) semantic layers for Digital Twins:
+
+### 1. [ThingsBoard](https://github.com/thingsboard/thingsboard) [![Stars](https://img.shields.io/github/stars/thingsboard/thingsboard?style=social&color=white)](https://github.com/thingsboard/thingsboard/stargazers)
+* **License:** Apache-2.0 | **Primary Focus:** Operational Digital Twin & IoT Dashboard Infrastructure
+* **Features:** Device management, entity relationships, telemetry data pipelines, real-time dashboards, rule chains, SCADA visualization, and edge gateways.
+
+### 2. [Magistrala (Mainflux)](https://github.com/absmach/magistrala) [![Stars](https://img.shields.io/github/stars/absmach/magistrala?style=social&color=white)](https://github.com/absmach/magistrala/stargazers)
+* **License:** Apache-2.0 | **Primary Focus:** IIoT Messaging & Device Twin Management
+* **Features:** Multi-protocol IoT messaging (MQTT, HTTP, WebSocket, CoAP), fine-grained access control, Kubernetes deployment, data routing.
+
+### 3. [Eclipse Ditto](https://github.com/eclipse-ditto/ditto) [![Stars](https://img.shields.io/github/stars/eclipse-ditto/ditto?style=social&color=white)](https://github.com/eclipse-ditto/ditto/stargazers)
+* **License:** EPL-2.0 | **Primary Focus:** Digital Twin State Abstraction & Device-as-a-Service
+* **Features:** Desired vs. reported state synchronization, access control policies, WebSocket/REST/Kafka integration, horizontal scalability on Kubernetes.
+
+### 4. [OpenTwins](https://github.com/ertis-research/opentwins) [![Stars](https://img.shields.io/github/stars/ertis-research/opentwins?style=social&color=white)](https://github.com/ertis-research/opentwins/stargazers)
+* **License:** Open Source | **Primary Focus:** Compositional Digital Twin Architecture
+* **Features:** Assembles Eclipse Ditto, Eclipse Hono, Apache Kafka, InfluxDB, and Grafana into a unified Digital Twin operational stack.
+
+### 5. [FIWARE Orion-LD](https://github.com/FIWARE/context.Orion-LD) [![Stars](https://img.shields.io/github/stars/FIWARE/context.Orion-LD?style=social&color=white)](https://github.com/FIWARE/context.Orion-LD/stargazers)
+* **License:** EPL-2.0 | **Primary Focus:** Smart Cities & NGSI-LD Context Management
+* **Features:** NGSI-LD / NGSI-v2 context broker, temporal graph representations, entity relationships, real-time spatial context updates.
+
+### 6. [Eclipse BaSyx](https://github.com/eclipse-basyx/basyx-java-sdk) [![Stars](https://img.shields.io/github/stars/eclipse-basyx/basyx-java-sdk?style=social&color=white)](https://github.com/eclipse-basyx/basyx-java-sdk/stargazers)
+* **License:** EPL-2.0 | **Primary Focus:** Industry 4.0 Asset Administration Shell (AAS)
+* **Features:** AAS submodels, OPC UA integration, Industry 4.0 semantics, multi-language SDKs (Java, Python, C++, Go, .NET, Rust).
+
+---
+
+## ⚙️ Open-Source Simulation & Co-Simulation
+
+These projects reproduce the physics modeling and dynamic simulation capabilities of commercial tools like *Ansys Twin Builder, Simcenter, Altair Twin Activate, and Simulink*:
+
+### 1. [PyBullet](https://github.com/bulletphysics/bullet3) [![Stars](https://img.shields.io/github/stars/bulletphysics/bullet3?style=social&color=white)](https://github.com/bulletphysics/bullet3/stargazers)
+* **License:** zlib | **Primary Focus:** Real-Time Physics & Multibody Simulation
+* **Features:** Rigid body dynamics, collision detection, robotics simulation, PyBullet Python API, reinforcement learning environments.
+
+### 2. [CARLA Simulator](https://github.com/carla-simulator/carla) [![Stars](https://img.shields.io/github/stars/carla-simulator/carla?style=social&color=white)](https://github.com/carla-simulator/carla/stargazers)
+* **License:** MIT | **Primary Focus:** Autonomous Driving & Vehicle Simulation
+* **Features:** Urban layout generation, sensor suites (LIDAR, cameras, RADAR), dynamic weather, traffic simulation, ROS integration.
+
+### 3. [Webots](https://github.com/cyberbotics/webots) [![Stars](https://img.shields.io/github/stars/cyberbotics/webots?style=social&color=white)](https://github.com/cyberbotics/webots/stargazers)
+* **License:** Apache-2.0 | **Primary Focus:** Robotics & Virtual Commissioning
+* **Features:** 3D robot modeling, physics engine, sensor/actuator simulation, Python/C++/ROS API, virtual hardware testing.
+
+### 4. [Eclipse SUMO](https://github.com/eclipse-sumo/sumo) [![Stars](https://img.shields.io/github/stars/eclipse-sumo/sumo?style=social&color=white)](https://github.com/eclipse-sumo/sumo/stargazers)
+* **License:** EPL-2.0 | **Primary Focus:** Urban Traffic & Mobility Simulation
+* **Features:** Microscopic traffic flow simulation, vehicle routing, signal control, multimodal traffic, TraCI API.
+
+### 5. [Project Chrono](https://github.com/projectchrono/chrono) [![Stars](https://img.shields.io/github/stars/projectchrono/chrono?style=social&color=white)](https://github.com/projectchrono/chrono/stargazers)
+* **License:** BSD-3-Clause | **Primary Focus:** Multibody Dynamics & Physics Engine
+* **Features:** Vehicle dynamics, terramechanics, FEA structural simulation, granular material simulation, parallel GPU acceleration.
+
+### 6. [OpenFOAM](https://github.com/OpenFOAM/OpenFOAM-dev) [![Stars](https://img.shields.io/github/stars/OpenFOAM/OpenFOAM-dev?style=social&color=white)](https://github.com/OpenFOAM/OpenFOAM-dev/stargazers)
+* **License:** GPL-3.0 | **Primary Focus:** Computational Fluid Dynamics (CFD)
+* **Features:** Fluid flow simulation, heat transfer, chemical reactions, multiphase flows, turbulence modeling.
+
+### 7. [EnergyPlus](https://github.com/NREL/EnergyPlus) [![Stars](https://img.shields.io/github/stars/NREL/EnergyPlus?style=social&color=white)](https://github.com/NREL/EnergyPlus/stargazers)
+* **License:** Custom Open Source | **Primary Focus:** Building Energy & HVAC Simulation
+* **Features:** Building energy consumption, thermal load analysis, HVAC system simulation, renewable energy integration.
+
+### 8. [Gazebo](https://github.com/gazebosim/gz-sim) [![Stars](https://img.shields.io/github/stars/gazebosim/gz-sim?style=social&color=white)](https://github.com/gazebosim/gz-sim/stargazers)
+* **License:** Apache-2.0 | **Primary Focus:** Autonomous Robot Digital Twins
+* **Features:** High-fidelity physics, sensor generation, ROS 2 integration, virtual environment testing.
+
+### 9. [OpenModelica](https://github.com/OpenModelica/OpenModelica) [![Stars](https://img.shields.io/github/stars/OpenModelica/OpenModelica?style=social&color=white)](https://github.com/OpenModelica/OpenModelica/stargazers)
+* **License:** OSMC-PL | **Primary Focus:** Modelica-Based System Modeling
+* **Features:** Acausal physical modeling, OMEdit graphical modeling, FMI export/import, OMSimulator co-simulation engine.
+
+### 10. [FMPy](https://github.com/CATIA-Systems/FMPy) [![Stars](https://img.shields.io/github/stars/CATIA-Systems/FMPy?style=social&color=white)](https://github.com/CATIA-Systems/FMPy/stargazers)
+* **License:** BSD-2-Clause | **Primary Focus:** FMI / FMU Co-Simulation Execution
+* **Features:** FMI 1.0/2.0/3.0 support, Model Exchange, Co-Simulation, web application GUI, Jupyter notebook integration.
+
+### 11. [HELICS](https://github.com/GMLC-TDC/HELICS) [![Stars](https://img.shields.io/github/stars/GMLC-TDC/HELICS?style=social&color=white)](https://github.com/GMLC-TDC/HELICS/stargazers)
+* **License:** BSD-3-Clause | **Primary Focus:** Large-Scale Co-Simulation Framework
+* **Features:** Interoperability for energy systems, time synchronization across heterogeneous simulators, C++/Python/Java APIs.
+
+### 12. [SimPy](https://github.com/simpx/simpy) [![Stars](https://img.shields.io/github/stars/simpx/simpy?style=social&color=white)](https://github.com/simpx/simpy/stargazers)
+* **License:** MIT | **Primary Focus:** Discrete-Event Simulation Framework
+* **Features:** Process-based discrete event modeling, queuing system simulation, resource management, Python generators.
+
+### 13. [Mosaik](https://github.com/OFFIS-mosaik/mosaik) [![Stars](https://img.shields.io/github/stars/OFFIS-mosaik/mosaik?style=social&color=white)](https://github.com/OFFIS-mosaik/mosaik/stargazers)
+* **License:** LGPL-2.1 | **Primary Focus:** Smart Grid Co-Simulation Orchestration
+* **Features:** Multi-simulator composition, scenario creation, time step synchronization across distributed models.
+
+---
+
+## 📡 Open-Source IoT & Edge Platforms
+
+Connectivity platforms for streaming industrial sensor telemetry into Digital Twin models:
+
+* 🟢 **[Node-RED](https://github.com/node-red/node-red)** [![Stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers) — Low-code flow-based programming for IoT data routing and protocol translation.
+* 🟢 **[NATS Server](https://github.com/nats-io/nats-server)** [![Stars](https://img.shields.io/github/stars/nats-io/nats-server?style=social&color=white)](https://github.com/nats-io/nats-server/stargazers) — High-performance cloud-native messaging system for real-time telemetry.
+* 🟢 **[Eclipse Mosquitto](https://github.com/eclipse-mosquitto/mosquitto)** [![Stars](https://img.shields.io/github/stars/eclipse-mosquitto/mosquitto?style=social&color=white)](https://github.com/eclipse-mosquitto/mosquitto/stargazers) — Lightweight MQTT message broker for edge device telemetry.
+* 🟢 **[EdgeX Foundry](https://github.com/edgexfoundry/edgex-go)** [![Stars](https://img.shields.io/github/stars/edgexfoundry/edgex-go?style=social&color=white)](https://github.com/edgexfoundry/edgex-go/stargazers) — Vendor-neutral IIoT edge software framework supporting Modbus, OPC UA, and MQTT.
+* 🟢 **[Eclipse Hono](https://github.com/eclipse-hono/hono)** [![Stars](https://img.shields.io/github/stars/eclipse-hono/hono?style=social&color=white)](https://github.com/eclipse-hono/hono/stargazers) — Scalable microservice infrastructure for connecting millions of IoT devices.
+
+---
+
+## 🌐 Open-Source 3D, BIM & Spatial Twin Technologies
+
+Spatial visualizers and 3D graphic engines for building virtual industrial environments:
+
+* 🎨 **[Blender](https://github.com/blender/blender)** [![Stars](https://img.shields.io/github/stars/blender/blender?style=social&color=white)](https://github.com/blender/blender/stargazers) — 3D modeling pipeline for creating CAD assets and digital twin visualization meshes.
+* 🌍 **[CesiumJS](https://github.com/CesiumGS/cesium)** [![Stars](https://img.shields.io/github/stars/CesiumGS/cesium?style=social&color=white)](https://github.com/CesiumGS/cesium/stargazers) — 3D WebGL globe and map visualization for geospatial & smart city digital twins.
+* 🗺️ **[OpenLayers](https://github.com/openlayers/openlayers)** [![Stars](https://img.shields.io/github/stars/openlayers/openlayers?style=social&color=white)](https://github.com/openlayers/openlayers/stargazers) — High-performance dynamic web map engine for 2D/3D spatial context.
+* 🎮 **[Open 3D Engine (O3DE)](https://github.com/o3de/o3de)** [![Stars](https://img.shields.io/github/stars/o3de/o3de?style=social&color=white)](https://github.com/o3de/o3de/stargazers) — Apache 2.0 multi-platform 3D engine for high-fidelity industrial metaverses.
+* 🏛️ **[IfcOpenShell](https://github.com/IfcOpenShell/IfcOpenShell)** [![Stars](https://img.shields.io/github/stars/IfcOpenShell/IfcOpenShell?style=social&color=white)](https://github.com/IfcOpenShell/IfcOpenShell/stargazers) — Open-source IFC/BIM processing library for building & infrastructure digital twins.
+* 🗺️ **[OpenStreetMap](https://github.com/openstreetmap/openstreetmap-website)** [![Stars](https://img.shields.io/github/stars/openstreetmap/openstreetmap-website?style=social&color=white)](https://github.com/openstreetmap/openstreetmap-website/stargazers) — Community-driven geospatial map data source for city-scale digital twins.
+
+---
+
+## 🗄️ Open-Source Data & Time-Series Infrastructure
+
+High-throughput databases and event streams for persistent telemetry storage:
+
+* ⚡ **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** [![Stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers) — Real-time columnar analytical database for massive industrial telemetry logs.
+* ⚡ **[Apache Spark](https://github.com/apache/spark)** [![Stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers) — Unified analytics engine for large-scale historical simulation data processing.
+* ⚡ **[DuckDB](https://github.com/duckdb/duckdb)** [![Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers) — In-process analytical SQL database engine ideal for local digital twin analytics.
+* ⚡ **[Apache Kafka](https://github.com/apache/kafka)** [![Stars](https://img.shields.io/github/stars/apache/kafka?style=social&color=white)](https://github.com/apache/kafka/stargazers) — Distributed event-streaming platform for real-time digital twin synchronization.
+* ⚡ **[InfluxDB](https://github.com/influxdata/influxdb)** [![Stars](https://img.shields.io/github/stars/influxdata/influxdb?style=social&color=white)](https://github.com/influxdata/influxdb/stargazers) — Purpose-built time-series database for high-frequency sensor measurements.
+* ⚡ **[TimescaleDB](https://github.com/timescale/timescaledb)** [![Stars](https://img.shields.io/github/stars/timescale/timescaledb?style=social&color=white)](https://github.com/timescale/timescaledb/stargazers) — PostgreSQL-based time-series database with full SQL support.
+* ⚡ **[PostgreSQL](https://github.com/postgres/postgres)** [![Stars](https://img.shields.io/github/stars/postgres/postgres?style=social&color=white)](https://github.com/postgres/postgres/stargazers) — Advanced relational database system (with PostGIS for spatial data).
+* ⚡ **[MinIO](https://github.com/minio/minio)** [![Stars](https://img.shields.io/github/stars/minio/minio?style=social&color=white)](https://github.com/minio/minio/stargazers) — High-performance S3-compatible object storage for CAD models, FMUs, and simulation outputs.
+
+---
+
+## 🧠 Open-Source AI/ML for Digital Twins
+
+Machine learning libraries for surrogate modeling, remaining useful life (RUL) estimation, and anomaly detection:
+
+* 🤖 **[TensorFlow](https://github.com/tensorflow/tensorflow)** [![Stars](https://img.shields.io/github/stars/tensorflow/tensorflow?style=social&color=white)](https://github.com/tensorflow/tensorflow/stargazers) — End-to-end ML platform for predictive digital twin analytics.
+* 🤖 **[PyTorch](https://github.com/pytorch/pytorch)** [![Stars](https://img.shields.io/github/stars/pytorch/pytorch?style=social&color=white)](https://github.com/pytorch/pytorch/stargazers) — Deep learning framework widely used for physics-informed neural networks (PINNs).
+* 🤖 **[scikit-learn](https://github.com/scikit-learn/scikit-learn)** [![Stars](https://img.shields.io/github/stars/scikit-learn/scikit-learn?style=social&color=white)](https://github.com/scikit-learn/scikit-learn/stargazers) — Machine learning library for fault classification, regression, and clustering.
+* 🤖 **[LightGBM](https://github.com/microsoft/LightGBM)** [![Stars](https://img.shields.io/github/stars/microsoft/LightGBM?style=social&color=white)](https://github.com/microsoft/LightGBM/stargazers) — Gradient boosting framework for fast tabular sensor data prediction.
+* 🤖 **[XGBoost](https://github.com/dmlc/xgboost)** [![Stars](https://img.shields.io/github/stars/dmlc/xgboost?style=social&color=white)](https://github.com/dmlc/xgboost/stargazers) — Optimized gradient boosting library for asset health and RUL modeling.
+* 🤖 **[MLflow](https://github.com/mlflow/mlflow)** [![Stars](https://img.shields.io/github/stars/mlflow/mlflow?style=social&color=white)](https://github.com/mlflow/mlflow/stargazers) — Open source platform for managing the ML lifecycle in digital twin pipelines.
+* 🤖 **[PyOD](https://github.com/yzhao062/pyod)** [![Stars](https://img.shields.io/github/stars/yzhao062/pyod?style=social&color=white)](https://github.com/yzhao062/pyod/stargazers) — Comprehensive Python toolkit for detecting anomalies in industrial sensor telemetry.
+
+---
+
+## 🔄 Commercial Platform → Open-Source Equivalents
+
+| Commercial Platform | Main Capability | Recommended Open-Source Equivalent Stack |
+| --- | --- | --- |
+| **Ansys Twin Builder** | Physics + system simulation + reduced-order models | OpenModelica + FMPy + HELICS + PyBullet + PyTorch |
+| **Siemens Simcenter** | CAE + system simulation + dynamics | OpenModelica + FMPy + OpenFOAM + Project Chrono |
+| **3DEXPERIENCE** | PLM + simulation + 3D rendering | OpenModelica + IfcOpenShell + Blender + O3DE + CesiumJS |
+| **Azure Digital Twins** | Twin graph + cloud IoT broker | Eclipse Ditto + FIWARE Orion-LD + ThingsBoard + Kafka |
+| **AWS IoT TwinMaker** | IoT + 3D + operational data | Eclipse Ditto + Hono + Kafka + InfluxDB + CesiumJS |
+| **PTC ThingWorx** | IIoT + application builder | ThingsBoard + EdgeX Foundry + Ditto + Node-RED |
+| **Altair Twin Activate** | System modeling + dynamic simulation | OpenModelica + FMPy + HELICS + Mosaik |
+| **C3 AI Digital Twins** | Enterprise AI asset intelligence | Ditto + FIWARE + PyTorch + XGBoost + MLflow |
+| **AVEVA PI System** | Industrial historian & telemetry | InfluxDB + TimescaleDB + ClickHouse + Kafka + Grafana |
+| **Bentley iTwin** | Infrastructure / BIM digital twins | IfcOpenShell + CesiumJS + Blender + OpenLayers |
+| **NVIDIA Omniverse** | 3D simulation + synthetic environments | O3DE + Blender + CARLA + Gazebo + Webots |
+| **Dassault SIMULIA** | Multiphysics & structural simulation | OpenModelica + Project Chrono + OpenFOAM |
+| **MathWorks Simulink** | Dynamic system controls modeling | OpenModelica + FMPy + Python Scientific Stack |
+
+---
+
+## 🏛️ Frameworks for Building Custom Digital Twin Systems
+
+A robust enterprise digital twin architecture is best constructed as a composable layered stack:
+
+| Layer | Recommended Open-Source Technologies 🛠️ |
+| --- | --- |
+| **Physical Assets** | Industrial Sensors · PLCs · Autonomous Robots · Machines |
+| **Edge Connectivity** | EdgeX Foundry · Eclipse Hono · OPC UA · Modbus |
+| **Event Streaming** | Apache Kafka · Eclipse Mosquitto · NATS |
+| **Digital Twin Core** | Eclipse Ditto · Eclipse BaSyx (AAS) · FIWARE Orion-LD |
+| **Asset Semantics** | Asset Administration Shell (AAS) · NGSI-LD · OPC UA Models |
+| **Time-Series Storage** | InfluxDB · TimescaleDB · ClickHouse |
+| **Data Lake** | MinIO · Apache Iceberg · Parquet |
+| **System Simulation** | OpenModelica · FMPy · HELICS · Mosaik |
+| **Physics Simulation** | Project Chrono · OpenFOAM · PyBullet |
+| **AI / Machine Learning** | PyTorch · XGBoost · scikit-learn · PyOD |
+| **3D & Spatial Visualization** | CesiumJS · Blender · O3DE · OpenLayers |
+| **BIM & Building Data** | IfcOpenShell · EnergyPlus |
+| **Dashboards & BI** | Grafana · Apache Superset · Metabase |
+| **Container Orchestration** | Docker · Kubernetes |
+
+---
+
+## 📐 Reference Architecture
+
+```mermaid
+flowchart TB
+    A[⚡ Physical Assets / IoT Sensors] --> B[📡 Industrial Connectivity EdgeX / Hono]
+    B --> C[🌊 Event Streaming Kafka / NATS / Mosquitto]
+    C --> D[⚙️ Digital Twin Core Eclipse Ditto / BaSyx / FIWARE]
+
+    D --> E[📊 Real-Time State Management]
+    D --> F[🏛️ Asset Semantics AAS / NGSI-LD]
+    D --> G[🗄️ Operational History]
+
+    G --> H[📈 Time-Series DB InfluxDB / TimescaleDB]
+    G --> I[💾 Data Lake MinIO / Parquet]
+
+    D --> J[🔮 Simulation & Physics Layer]
+    J --> K[⚙️ Multibody Dynamics Chrono / PyBullet]
+    J --> L[🔌 FMI / FMU Standards FMPy]
+    J --> M[🌐 Co-Simulation HELICS / Mosaik / OpenModelica]
+
+    H --> N[🧠 AI / ML Pipeline PyTorch / XGBoost]
+    J --> N
+
+    N --> O[🎯 Predictive Maintenance / Optimization]
+
+    D --> P[🌐 3D / BIM / Spatial Layer]
+    P --> Q[🎨 CesiumJS / Blender / O3DE / IfcOpenShell]
+
+    O --> R[🖥️ Decision Support Dashboards Grafana / Superset]
+    Q --> R
+    R --> S[👨‍💻 Operators & Engineers]
+    R --> T[🔄 Automated Actuation / Control]
 ```
-[Fab Equipment] ---> (OPC UA / SECS-GEM via open62541 / Eclipse Milo)
-                           |
-                           v
-              [Apache Kafka / MQTT Broker]
-                           |
-                           v
-        [Streaming Analytics / Apache Flink / PyOD]
-                           |
-            +--------------+--------------+
-            |                             |
-            v                             v
-  [TimescaleDB / PostgreSQL]      [ClickHouse Analytics]
-  (Process Limits & Context)     (Historical Metrology & SPC)
-            |                             |
-            +--------------+--------------+
-                           |
-                           v
-            [Grafana / Superset SPC Dashboards]
+
+---
+
+## 🔄 Digital Twin Lifecycle
+
+```mermaid
+flowchart LR
+    A[🏭 Physical Asset] --> B[📡 Telemetry Acquisition]
+    B --> C[⚙️ Digital State Model]
+    C --> D[🎯 Physics Calibration]
+    D --> E[🔮 Simulation Execution]
+    E --> F[✅ Model Validation]
+    F --> G[🚀 Operational Twin]
+    G --> H[📈 Real-Time Monitoring]
+    H --> I[🧠 AI Failure Prediction]
+    I --> J[⚡ Optimization Action]
+    J --> K[🔄 Actuation & Control]
+    K --> A
 ```
 
 ---
 
 ## 📈 Star History
 
-[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Semiconductor-Process-Control&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Semiconductor-Process-Control&type=date&legend=top-left)
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Simulation-n-Digital-Twin-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Simulation-n-Digital-Twin-Platform&type=date&legend=top-left)
 
 ---
 
 ## 🤝 How to Contribute
 
-1. Fork this repository.
-2. Add or update entries in `README.md` following the tabular format for SaaS products or the bulleted star-badge format for Open-Source projects.
-3. Ensure all links point to official project websites or valid GitHub repositories.
-4. Open a Pull Request with a short explanation of your additions.
+Contributions are welcome! You can contribute by:
+* ➕ Adding new open-source Digital Twin projects or simulation tools.
+* 📝 Improving documentation, tutorials, and real-world deployment examples.
+* 🛠️ Updating license, pricing, or company size information.
 
-Check out [Awesome Awesome Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for more curated lists!
+Please see our [Awesome List Guidelines](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for submission details.
 
 ---
 
 ## ⚠️ Disclaimer
 
-This repository is community-curated for informational purposes only. Product descriptions and trademarks belong to their respective corporate owners. Statistical process control calculations and control limit settings must be validated by qualified process and quality engineers before deployment in live manufacturing environments.
+This repository is intended strictly as a **technology discovery and architectural comparison resource**. All product names, logos, and trademarks belong to their respective owners. Commercial pricing and valuation figures are estimated based on public business intelligence data and are subject to change.
+
+---
+
+<p align="center">
+  <b>Awesome Simulation &amp; Digital Twin Platform</b> is maintained by <a href="https://github.com/ishandutta2007">Ishan Dutta</a>.
+</p>
