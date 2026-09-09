@@ -1,126 +1,106 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
   <defs>
+    <!-- Background Gradients -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070b19" />
-      <stop offset="50%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#030712" />
-    </linearGradient>
-    
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="50%" stop-color="#4facfe" />
-      <stop offset="100%" stop-color="#00c6ff" />
+      <stop offset="0%" stop-color="#0f172a">
+        <animate attributeName="stop-color" values="#0f172a;#1e1b4b;#0f172a" dur="10s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#1e1b4b">
+        <animate attributeName="stop-color" values="#1e1b4b;#0f172a;#1e1b4b" dur="10s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#311b92">
+        <animate attributeName="stop-color" values="#311b92;#1e1b4b;#311b92" dur="10s" repeatCount="indefinite" />
+      </stop>
     </linearGradient>
 
+    <!-- Accent Glow Gradient -->
     <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#38bdf8" />
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
     </linearGradient>
 
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
-    <style>
-      .pulse-node {
-        animation: pulse 3s infinite ease-in-out;
-      }
-      .pulse-node-delayed {
-        animation: pulse 3s infinite ease-in-out 1.5s;
-      }
-      .rotate-ring {
-        transform-origin: 1050px 200px;
-        animation: rotateRing 20s linear infinite;
-      }
-      .rotate-ring-reverse {
-        transform-origin: 1050px 200px;
-        animation: rotateRingRev 15s linear infinite;
-      }
-      .glow-line {
-        stroke-dasharray: 200;
-        stroke-dashoffset: 400;
-        animation: dash 4s linear infinite;
-      }
-
-      @keyframes pulse {
-        0%, 100% { transform: scale(1); opacity: 0.6; }
-        50% { transform: scale(1.3); opacity: 1; filter: drop-shadow(0 0 8px #00f2fe); }
-      }
-      @keyframes rotateRing {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-      }
-      @keyframes rotateRingRev {
-        from { transform: rotate(360deg); }
-        to { transform: rotate(0deg); }
-      }
-      @keyframes dash {
-        to { stroke-dashoffset: 0; }
-      }
-    </style>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
   </defs>
+
+  <style>
+    .title { font-family: 'Segoe UI', Ubuntu, Roboto, sans-serif; font-size: 52px; font-weight: 800; fill: url(#textGrad); }
+    .subtitle { font-family: 'Segoe UI', Ubuntu, Roboto, sans-serif; font-size: 22px; font-weight: 400; fill: #94a3b8; }
+    .badge { font-family: 'Segoe UI', Ubuntu, Roboto, sans-serif; font-size: 14px; font-weight: 600; fill: #38bdf8; }
+    .node-text { font-family: 'Segoe UI', Ubuntu, Roboto, sans-serif; font-size: 13px; font-weight: 600; fill: #e2e8f0; }
+  </style>
 
   <!-- Background -->
   <rect width="1200" height="400" fill="url(#bgGrad)" rx="16" />
 
-  <!-- Grid Pattern -->
-  <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
-    <path d="M 0,50 L 1200,50 M 0,100 L 1200,100 M 0,150 L 1200,150 M 0,200 L 1200,200 M 0,250 L 1200,250 M 0,300 L 1200,300 M 0,350 L 1200,350" />
-    <path d="M 100,0 L 100,400 M 200,0 L 200,400 M 300,0 L 300,400 M 400,0 L 400,400 M 500,0 L 500,400 M 600,0 L 600,400 M 700,0 L 700,400 M 800,0 L 800,400 M 900,0 L 900,400 M 1000,0 L 1000,400 M 1100,0 L 1100,400" />
+  <!-- Animated Ambient Glow -->
+  <circle cx="600" cy="200" r="300" fill="url(#glow)">
+    <animate attributeName="r" values="250;350;250" dur="6s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Decorative Grid / Nodes -->
+  <g opacity="0.15">
+    <line x1="100" y1="0" x2="100" y2="400" stroke="#6366f1" stroke-width="1" />
+    <line x1="300" y1="0" x2="300" y2="400" stroke="#6366f1" stroke-width="1" />
+    <line x1="500" y1="0" x2="500" y2="400" stroke="#6366f1" stroke-width="1" />
+    <line x1="700" y1="0" x2="700" y2="400" stroke="#6366f1" stroke-width="1" />
+    <line x1="900" y1="0" x2="900" y2="400" stroke="#6366f1" stroke-width="1" />
+    <line x1="1100" y1="0" x2="1100" y2="400" stroke="#6366f1" stroke-width="1" />
   </g>
 
-  <!-- Dynamic Digital Twin Mesh Graphic (Right Side) -->
-  <g class="rotate-ring">
-    <circle cx="1050" cy="200" r="130" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 8" opacity="0.4" />
-    <polygon points="1050,70 1162,265 938,265" fill="none" stroke="#00f2fe" stroke-width="1" opacity="0.3" />
-  </g>
-  
-  <g class="rotate-ring-reverse">
-    <circle cx="1050" cy="200" r="95" fill="none" stroke="#818cf8" stroke-width="1" stroke-dasharray="4 4" opacity="0.5" />
-    <polygon points="1050,330 938,135 1162,135" fill="none" stroke="#818cf8" stroke-width="1" opacity="0.3" />
+  <!-- Floating School Component Orbit Nodes -->
+  <!-- Student SIS Node -->
+  <g transform="translate(180, 110)">
+    <rect x="-60" y="-20" width="120" height="40" rx="20" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
+    <text text-anchor="middle" y="5" class="node-text">🎓 Student SIS</text>
+    <animateTransform attributeName="transform" type="translate" values="180,110; 180,100; 180,110" dur="4s" repeatCount="indefinite" />
   </g>
 
-  <!-- Central Digital Twin Core Node -->
-  <circle cx="1050" cy="200" r="25" fill="#00f2fe" opacity="0.8" filter="url(#glow)" class="pulse-node" />
-  <circle cx="1050" cy="200" r="10" fill="#ffffff" />
+  <!-- Education ERP Node -->
+  <g transform="translate(1020, 110)">
+    <rect x="-65" y="-20" width="130" height="40" rx="20" fill="#1e293b" stroke="#818cf8" stroke-width="2" />
+    <text text-anchor="middle" y="5" class="node-text">🏫 School ERP</text>
+    <animateTransform attributeName="transform" type="translate" values="1020,110; 1020,120; 1020,110" dur="5s" repeatCount="indefinite" />
+  </g>
 
-  <!-- Connecting Lines -->
-  <path d="M 650 200 L 950 200 M 800 120 L 1050 200 M 800 280 L 1050 200" stroke="url(#accentGrad)" stroke-width="2" opacity="0.6" class="glow-line" />
+  <!-- Parent Portal Node -->
+  <g transform="translate(180, 300)">
+    <rect x="-65" y="-20" width="130" height="40" rx="20" fill="#1e293b" stroke="#c084fc" stroke-width="2" />
+    <text text-anchor="middle" y="5" class="node-text">👨‍👩‍👧 Parent Portal</text>
+    <animateTransform attributeName="transform" type="translate" values="180,300; 180,310; 180,300" dur="4.5s" repeatCount="indefinite" />
+  </g>
 
-  <!-- Outer Satellite Nodes -->
-  <circle cx="950" cy="200" r="8" fill="#38bdf8" class="pulse-node-delayed" />
-  <circle cx="800" cy="120" r="8" fill="#818cf8" class="pulse-node" />
-  <circle cx="800" cy="280" r="8" fill="#34d399" class="pulse-node-delayed" />
+  <!-- LMS Integration Node -->
+  <g transform="translate(1020, 300)">
+    <rect x="-65" y="-20" width="130" height="40" rx="20" fill="#1e293b" stroke="#34d399" stroke-width="2" />
+    <text text-anchor="middle" y="5" class="node-text">📚 LMS &amp; Exams</text>
+    <animateTransform attributeName="transform" type="translate" values="1020,300; 1020,290; 1020,300" dur="5.5s" repeatCount="indefinite" />
+  </g>
 
-  <!-- Left Header Content -->
-  <g transform="translate(70, 0)">
-    <!-- Category Badge -->
-    <rect x="0" y="65" width="280" height="32" rx="16" fill="#0f172a" stroke="#00f2fe" stroke-width="1.5" opacity="0.9" />
-    <text x="140" y="86" fill="#00f2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="1.5">⚡ AWESOME PLATFORM LIST</text>
-
+  <!-- Central Title Header -->
+  <g transform="translate(600, 175)" text-anchor="middle">
+    <!-- Top Pill Badge -->
+    <rect x="-140" y="-95" width="280" height="32" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+    <text y="-74" class="badge">🚀 SAAS &amp; OPEN-SOURCE ECOSYSTEM</text>
+    
     <!-- Main Title -->
-    <text x="0" y="155" fill="url(#textGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="40" font-weight="800" letter-spacing="-0.5">Simulation &amp; Digital Twin</text>
-    <text x="0" y="205" fill="#00f2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="700" letter-spacing="-0.5" filter="url(#glow)">Technology Stack</text>
+    <text class="title" y="-10">Awesome School Management</text>
 
-    <!-- Subtitle / Meta -->
-    <text x="0" y="260" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500">
-      Physics Models · Industrial IoT · Asset Intelligence · 3D Metaverses
+    <!-- Subtitle -->
+    <text class="subtitle" y="45">Student Information Systems • School ERP • Academic Management</text>
+  </g>
+
+  <!-- Bottom Dynamic Pulsating Status Bar -->
+  <g transform="translate(600, 345)" text-anchor="middle">
+    <rect x="-260" y="-16" width="520" height="32" rx="8" fill="#1e293b" opacity="0.9" stroke="#475569" stroke-width="1" />
+    <circle cx="-230" cy="0" r="5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="10" y="5" font-family="'Segoe UI', sans-serif" font-size="13" fill="#cbd5e1">
+      Curated Comparison of Enterprise SaaS Platforms &amp; Self-Hosted Repos
     </text>
-
-    <!-- Stat Pills -->
-    <g transform="translate(0, 290)">
-      <rect x="0" y="0" width="140" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
-      <text x="15" y="23" fill="#38bdf8" font-family="sans-serif" font-size="14" font-weight="700">🌐 Commercial</text>
-
-      <rect x="155" y="0" width="140" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
-      <text x="170" y="23" fill="#34d399" font-family="sans-serif" font-size="14" font-weight="700">⚡ Open Source</text>
-
-      <rect x="310" y="0" width="140" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
-      <text x="325" y="23" fill="#f43f5e" font-family="sans-serif" font-size="14" font-weight="700">📊 Benchmarks</text>
-    </g>
   </g>
 </svg>
